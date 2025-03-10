@@ -3,6 +3,7 @@ import Swagger from '../components/Swagger';
 import spec from './swagger-suno-api.json'; // 直接导入JSON文件
 import Section from '../components/Section';
 import Markdown from 'react-markdown';
+import { NextResponse } from 'next/server';
 
 
 export default function Docs() {
