@@ -1,3 +1,31 @@
+/**
+ * Purpose: Generates custom audio based on provided parameters.
+ * Method: POST
+ * Parameters:
+ * prompt: The text prompt for generating the audio.
+
+tags: Tags associated with the audio.
+
+title: The title of the audio.
+
+make_instrumental: Whether to make the audio instrumental.
+
+model: The model to use for generation (defaults to DEFAULT_MODEL).
+
+wait_audio: Whether to wait for the audio to be fully generated.
+
+negative_tags: Tags to avoid in the generated audio.
+
+Behaviour: 
+Calls the custom_generate method from sunoApi with the provided parameters.
+
+Returns the generated audio information in JSON format with a 200 OK status.
+
+If an error occurs, it returns a 402 Payment Required or 500 Internal Server Error depending on the error type.
+ */
+
+
+
 import { NextResponse, NextRequest } from "next/server";
 import { cookies } from 'next/headers';
 import { DEFAULT_MODEL, sunoApi } from "@/lib/SunoApi";

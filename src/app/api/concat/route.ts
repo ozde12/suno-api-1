@@ -1,3 +1,13 @@
+/**
+ * Purpose: Concatenates audio clips based on a provided clip ID.
+ * Method: POST
+ * Param: clip_id (body parameter): The ID of the clip to concatenate.
+ * f the clip_id is provided, it calls the concatenate method from sunoApi to concatenate the audio.
+
+Returns the concatenated audio information in JSON format with a 200 OK status.
+ */
+
+
 import { NextResponse, NextRequest } from "next/server";
 import { cookies } from 'next/headers'
 import { sunoApi } from "@/lib/SunoApi";
