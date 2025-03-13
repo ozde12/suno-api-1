@@ -1,3 +1,25 @@
+/**
+ * Purpose: Extends an existing audio clip based on provided parameters.
+ * Method: POST
+ * Parameters:
+ * audio_id: The ID of the audio to extend.
+
+prompt: The text prompt for extending the audio.
+
+continue_at: The point in the audio to continue from.
+
+tags: Tags associated with the extended audio.
+
+negative_tags: Tags to avoid in the extended audio.
+
+title: The title of the extended audio.
+
+model: The model to use for extension (defaults to DEFAULT_MODEL).
+
+wait_audio: Whether to wait for the audio to be fully extended.
+ */
+
+
 import { NextResponse, NextRequest } from "next/server";
 import { cookies } from 'next/headers'
 import { DEFAULT_MODEL, sunoApi } from "@/lib/SunoApi";

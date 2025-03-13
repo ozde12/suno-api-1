@@ -1,3 +1,10 @@
+/** 
+Purpose: Fetches audio clip information based on a provided clip ID.
+Method: Get
+Parameters: id
+*/
+
+
 import { NextResponse, NextRequest } from "next/server";
 import { sunoApi } from "@/lib/SunoApi";
 import { corsHeaders } from "@/lib/utils";

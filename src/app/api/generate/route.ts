@@ -1,3 +1,16 @@
+/**
+ * Purpose: Generates audio based on a provided prompt.
+ * Method: POST
+ * Parameters:
+ * prompt: The text prompt for generating the audio.
+
+make_instrumental: Whether to make the audio instrumental.
+
+model: The model to use for generation (defaults to DEFAULT_MODEL).
+
+wait_audio: Whether to wait for the audio to be fully generated.
+ */
+
 import { NextResponse, NextRequest } from "next/server";
 import { cookies } from 'next/headers'
 import { DEFAULT_MODEL, sunoApi } from "@/lib/SunoApi";
