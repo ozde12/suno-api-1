@@ -11,17 +11,12 @@ def analyze_beats(audio_path):
     beat_times = librosa.frames_to_time(beats, sr=sr)  # Convert beats to time
     return tempo, beat_times
 
-# RETRIEVE THE LYRIC TIME STAMPS
-# Example timestamps for each lyric line (Replace with actual lyric alignment)
-LYRIC_TIMESTAMPS = {
-    "verse_1": [0.0, 3.0, 6.0],
-    "chorus": [9.0, 12.0, 15.0],
-    "verse_2": [18.0, 21.0, 24.0],
-    "bridge": [27.0, 30.0],
-    "final_chorus": [33.0, 36.0, 39.0]
-}
+# Retrieve lyric timestamps from JSON file
+def load_lyric_timestamps(json_path):
+    with open(json_path, "r", encoding="utf-8") as file:
+        lyrics_data = json.load(file)
+    return [(entry["word"], entry["start_s"]) for entry in lyrics_data if entry["success"]]
 
-#WILL DEFINE IN THE TUTORIAL
 # Define dance moves (Placeholder actions)
 MOVES = {
     "verse": "SMALL_STEP",  
@@ -30,25 +25,25 @@ MOVES = {
 }
 
 # Assign moves based on beats and lyrics
-def assign_moves(beat_times):
+def assign_moves(beat_times, lyric_timestamps):
     dance_sequence = []
     beat_index = 0  # Track the beats
 
-    for section, times in LYRIC_TIMESTAMPS.items():
-        move_type = "verse" if "verse" in section else "chorus" if "chorus" in section else "bridge"
+    for word, lyric_time in lyric_timestamps:
+        # Determine move type based on word category (simplified logic)
+        move_type = "verse" if "verse" in word.lower() else "chorus" if "chorus" in word.lower() else "bridge"
+        move = MOVES.get(move_type, "SMALL_STEP")
+        
+        # Find the closest beat after the lyric start time
+        while beat_index < len(beat_times) and beat_times[beat_index] < lyric_time:
+            beat_index += 1
 
-        for lyric_time in times:
-            # Find the closest beat after the lyric start time
-            while beat_index < len(beat_times) and beat_times[beat_index] < lyric_time:
-                beat_index += 1
-
-            if beat_index < len(beat_times):
-                movement_time = beat_times[beat_index]  # Place move at the next beat
-                dance_sequence.append({"time": movement_time, "move": MOVES[move_type]})
+        if beat_index < len(beat_times):
+            movement_time = beat_times[beat_index]  # Place move at the next beat
+            dance_sequence.append({"time": movement_time, "word": word, "move": move})
 
     return dance_sequence
 
-# USE THE CODE FROM ASSIGNMENT 2 TO REPLACE HERE
 # Execute moves in sync with the song
 def execute_dance(dance_sequence):
     start_time = time.time()
@@ -58,18 +53,19 @@ def execute_dance(dance_sequence):
         if wait_time > 0:
             time.sleep(wait_time)  # Syncs to song timing
         
-        move = step["move"]
-        print(f"Executing move: {move}")  # Replace with actual robot command
+        print(f"Executing move: {step['move']} at {step['time']}s for word '{step['word']}'")
 
-#CHANGE TO INCLUDE THE 
 # Main execution
 if __name__ == "__main__":
-    audio_path = "your_song.wav"  # Change this to the actual path of your song
+    audio_path = r"C:\Users\ozdep\Documents\suno 1002\suno-api\suno-api\saved_songs\Purrfect Day.mp3"  # Change this to the actual path of your song
+    json_path = r"C:\Users\ozdep\Documents\suno 1002\suno-api\suno-api\saved_songs\d07e0180-cd91-4467-99d1-5a579253a053_aligned_lyrics.json"
+    
     tempo, beat_times = analyze_beats(audio_path)
+    lyric_timestamps = load_lyric_timestamps(json_path)
     
     print(f"Detected tempo: {tempo} BPM")
     
-    dance_sequence = assign_moves(beat_times)
+    dance_sequence = assign_moves(beat_times, lyric_timestamps)
     
     print("Starting dance execution...")
     execute_dance(dance_sequence)
