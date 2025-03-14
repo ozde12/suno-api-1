@@ -6,7 +6,7 @@ from twisted.internet.defer import inlineCallbacks
 def main(session, details):
     #moves = yield session.call("rom.optional.behavior.info")
     #print(moves)
-	yield session.call("rom.optional.behavior.play", name="dance_00011en'")
+	yield session.call("rom.optional.behavior.play", name="BlocklyTouchShoulders")
 
 
 wamp = Component(
