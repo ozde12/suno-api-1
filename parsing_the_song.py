@@ -3,6 +3,7 @@ import librosa.display
 import numpy as np
 import json
 import time
+import matplotlib.pyplot as plt
 
 # Load the audio file and analyze beats
 def analyze_beats(audio_path):
@@ -10,6 +11,22 @@ def analyze_beats(audio_path):
     tempo, beats = librosa.beat.beat_track(y=y, sr=sr, trim=False)  # Detect beats
     beat_times = librosa.frames_to_time(beats, sr=sr)  # Convert beats to time
     return tempo, beat_times
+
+# Plot histogram of beat intervals
+def plot_beat_histogram(beat_times):
+    if len(beat_times) < 2:
+        print("Not enough beats detected to plot a histogram.")
+        return
+    
+    beat_intervals = np.diff(beat_times)  # Time differences between consecutive beats
+    
+    plt.figure(figsize=(8, 5))
+    plt.hist(beat_intervals, bins=25, alpha=0.75, color='b', edgecolor='black')
+    plt.xlabel("Time Between Beats (s)")
+    plt.ylabel("Frequency")
+    plt.title("Beat Interval Distribution (Rhythm Pattern)")
+    plt.grid(True)
+    plt.show()
 
 # Retrieve lyric timestamps from JSON file
 def load_lyric_timestamps(json_path):
@@ -30,11 +47,9 @@ def assign_moves(beat_times, lyric_timestamps):
     beat_index = 0  # Track the beats
 
     for word, lyric_time in lyric_timestamps:
-        # Determine move type based on word category (simplified logic)
         move_type = "verse" if "verse" in word.lower() else "chorus" if "chorus" in word.lower() else "bridge"
         move = MOVES.get(move_type, "SMALL_STEP")
         
-        # Find the closest beat after the lyric start time
         while beat_index < len(beat_times) and beat_times[beat_index] < lyric_time:
             beat_index += 1
 
@@ -64,6 +79,9 @@ if __name__ == "__main__":
     lyric_timestamps = load_lyric_timestamps(json_path)
     
     print(f"Detected tempo: {tempo} BPM")
+    
+    # Plot the beat histogram
+    plot_beat_histogram(beat_times)
     
     dance_sequence = assign_moves(beat_times, lyric_timestamps)
     
