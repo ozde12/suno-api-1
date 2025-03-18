@@ -3,33 +3,48 @@ from twisted.internet import reactor, defer
 from autobahn.twisted.component import Component, run
 from twisted.internet.defer import inlineCallbacks
 from autobahn.twisted.util import sleep
+import time 
+
+
+
 
 # Define Moves
 MOVES = {
     "verse": "Stand/Emotions/Positive/Happy_1",
     "chorus": "Stand/Emotions/Positive/Winner_2",
-    "bridge": "BlocklyTouchShoulders"
+    "bridge": "BlocklyTouchShoulders",
+    "intro_or_outro": "Stand/Emotions/Positive/Winner_2"
 }
+
+music_start_time = 0.0
 
 @inlineCallbacks
 def play_music(session):
     """Plays music using the WAMP streaming API."""
-    print("Starting music playback...")
+
+    global music_start_time
+    
+    #print("Starting music playback...")
+    print(f"Music playback requested at {music_start_time:.2f} seconds (system time).")
 
     try:
         result = yield session.call("rom.actuator.audio.stream",
             url="https://audio.jukehost.co.uk/V0nXb4jfEjrJ1rT8D1Z04dTNIneY74Al",
             sync=False
         )
+        music_start_time = time.time()
         print(f"Music started successfully: {result}")  # Debugging response from WAMP API
     except Exception as e:
         print(f"Error starting music: {e}")
 
 
 @inlineCallbacks
-def execute_move(session, move):
+def execute_move(session, start_time, data):
     """Simulate executing a move."""
-    print(f"Executing move: {move}")  # Debugging
+    move, expected_time = data
+    actual_time = time.time() - start_time
+    delay = actual_time - expected_time
+    print(f"Executing move: {move} at {actual_time:.2f}s Expected: {expected_time}, Delay: {delay:.2f}")  # Debugging
     yield session.call("rom.optional.behavior.play", name=move)
 
 def schedule_moves(session, timestamps):
@@ -38,15 +53,17 @@ def schedule_moves(session, timestamps):
 
     MOVE_INTERVALS = {
         "verse": 4,
-        "chorus": 2,
+        "chorus": 4,
         "bridge": 6
     }
+    start_time = time.time()
 
     for section, times in timestamps.items():
         move = MOVES.get(section)  # Get move based on section name
 
         if move is None:
             print(f"Warning: No move found for section '{section}'")
+            print("NAME OF SECTION:", section)
             continue  # Skip scheduling unknown moves
 
         interval = MOVE_INTERVALS.get(section, 4)
@@ -55,11 +72,18 @@ def schedule_moves(session, timestamps):
         print(f"Scheduling {len(filtered_times)} moves for {section} ({move})")
 
         for t in filtered_times:
-            print(f"Scheduling move {move} at time {t:.2f}")
+            #expected_time = t 
+            #print(f"Scheduling move {move} at time {t:.2f} (expected at {expected_time:.2f}s))")
+            
 
+            #d = defer.Deferred()
+            #reactor.callLater(t, d.callback, move)
+            #d.addCallback(lambda move_name: execute_move(session, move_name))
+            #deferreds.append(d)
             d = defer.Deferred()
-            reactor.callLater(t, d.callback, move)
-            d.addCallback(lambda move_name: execute_move(session, move_name))
+            expected_exec_time = t
+            reactor.callLater(t, d.callback, (move, expected_exec_time))  # Pass expected execution time
+            d.addCallback(lambda data: execute_move(session, start_time, data))
             deferreds.append(d)
 
     return defer.DeferredList(deferreds)
@@ -67,6 +91,8 @@ def schedule_moves(session, timestamps):
 @inlineCallbacks
 def main(session, details):
     print("Session connected!")
+
+    yield session.call("rom.optional.behavior.play", name="BlocklyStand")
 
     with open("music_analysis.json", "r") as f:
         analysis = json.load(f)
@@ -81,12 +107,10 @@ def main(session, details):
 
     print(f"Extracted Song Duration: {song_duration} seconds")
 
-    # Start music first
-    yield play_music(session)
-    
-    # Schedule movements slightly after music starts
-    yield sleep(1)  # Small delay to ensure music starts before moves
-    yield schedule_moves(session, timestamps)
+    # Start music and schedule moves simultaneously
+    deferreds = [play_music(session), schedule_moves(session, timestamps)]
+    yield defer.DeferredList(deferreds)
+
 
     # Wait for song to finish
     yield sleep(song_duration)
@@ -103,7 +127,7 @@ wamp = Component(
         "serializers": ["msgpack"],
         "max_retries": 0
     }],
-    realm="rie.67d7f8f37d4143cdaa8217c2",
+    realm="rie.67d942577d4143cdaa821da2",
 )
 wamp.on_join(main)
 
