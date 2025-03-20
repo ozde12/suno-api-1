@@ -5,9 +5,6 @@ from twisted.internet.defer import inlineCallbacks
 from autobahn.twisted.util import sleep
 import time 
 
-
-
-
 # Define Moves
 MOVES = {
     "verse": "Stand/Emotions/Positive/Happy_1",
@@ -41,10 +38,10 @@ def play_music(session):
 @inlineCallbacks
 def execute_move(session, start_time, data):
     """Simulate executing a move."""
-    move, expected_time = data
+    move, expected_time, section = data
     actual_time = time.time() - start_time
     delay = actual_time - expected_time
-    print(f"Executing move: {move} at {actual_time:.2f}s Expected: {expected_time}, Delay: {delay:.2f}")  # Debugging
+    print(f"Executing move: {move} at {actual_time:.2f}s for the section {section} Expected: {expected_time}, Delay: {delay:.2f}")  # Debugging
     yield session.call("rom.optional.behavior.play", name=move)
 
 def schedule_moves(session, timestamps):
@@ -54,7 +51,8 @@ def schedule_moves(session, timestamps):
     MOVE_INTERVALS = {
         "verse": 4,
         "chorus": 4,
-        "bridge": 6
+        "bridge": 6,
+        "intro_or_outro": 4
     }
     start_time = time.time()
 
@@ -72,17 +70,9 @@ def schedule_moves(session, timestamps):
         print(f"Scheduling {len(filtered_times)} moves for {section} ({move})")
 
         for t in filtered_times:
-            #expected_time = t 
-            #print(f"Scheduling move {move} at time {t:.2f} (expected at {expected_time:.2f}s))")
-            
-
-            #d = defer.Deferred()
-            #reactor.callLater(t, d.callback, move)
-            #d.addCallback(lambda move_name: execute_move(session, move_name))
-            #deferreds.append(d)
             d = defer.Deferred()
             expected_exec_time = t
-            reactor.callLater(t, d.callback, (move, expected_exec_time))  # Pass expected execution time
+            reactor.callLater(t, d.callback, (move, expected_exec_time, section))  # Pass expected execution time
             d.addCallback(lambda data: execute_move(session, start_time, data))
             deferreds.append(d)
 
@@ -127,7 +117,7 @@ wamp = Component(
         "serializers": ["msgpack"],
         "max_retries": 0
     }],
-    realm="rie.67d942577d4143cdaa821da2",
+    realm="rie.67dbf737540602623a34c5ba",
 )
 wamp.on_join(main)
 

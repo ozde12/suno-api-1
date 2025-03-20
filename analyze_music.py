@@ -25,6 +25,8 @@ def load_lyrics(file_path):
             current_section = "chorus"
         elif "[bridge" in word:
             current_section = "bridge"
+        elif "intro_or_outro" in word:
+            current_section = "intro_or_outro"
 
         if current_section:
             if current_section not in section_boundaries:
@@ -54,7 +56,7 @@ def analyze_music(audio_path):
     section_boundaries = load_lyrics(ALIGNED_LYRICS_PATH)
 
     # Assign each beat to a section
-    movement_schedule = {"verse": [], "chorus": [], "bridge": []}
+    movement_schedule = {"verse": [], "chorus": [], "bridge": [], "intro_or_outro": []}
     
     for beat in beat_times:
         assigned = False
