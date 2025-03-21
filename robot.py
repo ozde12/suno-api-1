@@ -101,6 +101,62 @@ def download_audio(song_title, audio_url):
         print(f"❌ Error downloading audio: {e}")
         return None
 
+def custom_generate(prompt, tags="playful, elementary school", negative_tags="female vocals", title=None, make_instrumental=False, model="chirp-v3-5|chirp-v3-0", wait_audio=False):
+    """Generate a custom song with provided parameters."""
+    url = f"{BASE_URL}/api/custom_generate"
+    payload = {
+        "prompt": prompt,
+        "tags": tags,
+        "negative_tags": negative_tags,
+        "title": title,
+        "make_instrumental": make_instrumental,
+        "model": model,
+        "wait_audio": wait_audio
+    }
+
+    try:
+        response = requests.post(url, json=payload)
+        response_data = response.json() if response.status_code == 200 else None
+
+        if not response_data or not isinstance(response_data, list):
+            print("❌ Invalid response format from API.")
+            return None
+
+        songs = []
+        for item in response_data:
+            if isinstance(item, dict):
+                inner_data = next(iter(item.values()), None)  # Extract first nested dictionary safely
+                if isinstance(inner_data, dict):
+                    song_id = inner_data.get("id")
+                    title = inner_data.get("title")
+                    lyrics = inner_data.get("lyric")
+                    audio_url = inner_data.get("audio_url")
+
+                    if song_id and title:
+                        print(f"✅ Song generated: {song_id}")
+
+                        # Save lyrics if available
+                        lyrics_file = save_lyrics(title, lyrics) if lyrics else None
+                        metadata_file = save_metadata(title, song_id, audio_url) if audio_url else None
+                        audio_file = download_audio(title, audio_url) if audio_url else None
+
+                        songs.append({
+                            "id": song_id, "title": title, "lyrics": lyrics or "No lyrics available",
+                            "audio_url": audio_url or "No audio URL", "lyrics_file": lyrics_file,
+                            "metadata_file": metadata_file, "audio_file": audio_file
+                        })
+                    else:
+                        print(f"⚠️ Missing essential song details: {inner_data}")
+
+        return songs if songs else None
+
+    except requests.exceptions.RequestException as e:
+        print(f"❌ API request failed: {e}")
+        return None
+    except Exception as e:
+        print(f"❌ Unexpected error: {e}")
+        return None
+
 
 def generate_song(prompt, make_instrumental=False, model="chirp-v3-5|chirp-v3-0", wait_audio=True):
     """Generate a song based on a prompt."""
@@ -171,10 +227,61 @@ def get_aligned_lyrics(song_id):
         print(f"❌ Error fetching aligned lyrics: {e}")
 
 
-# === 🎶 Usage Example ===
+# === 🎶 Usage Example if you do not have predefined lyrics===
 prompt_text = "A playful song about cats for Dutch kids aged 7-8 learning English."
 song_data = generate_song(prompt_text)
 if song_data:
     song_id = song_data[0]["id"]
     get_aligned_lyrics(song_id)
     print("✅ DONE!")
+
+# Example usage if you would like to pass on predefined lyrics
+custom_lyrics = """ 
+[Verse 1]
+I see a cat, soft and small,
+It jumps so high, but never falls.
+Its whiskers, long and thin,
+Meow, meow, meow says the cat!
+
+[Chorus]
+Meow, meow, what do you say?
+Meow, meow, let's play today!
+You're my pet, I love you so,
+Purr, purr, don't ever go!
+
+[Verse 2]
+My little cat sleeps all day,
+Wakes up at night, ready to play.
+Its little whiskers move around,
+Meow, meow, meow says the cat!
+
+[Chorus]
+Meow, meow, what do you say?
+Meow, meow, let's play today!
+You're my pet, I love you so,
+Purr, purr, don't ever go!
+
+[Bridge]
+Cat, whiskers, pet, and meow,
+Say them loud, say them now!
+Cat, whiskers, pet, and meow,
+One more time, nice and proud!
+
+[Chorus]
+Meow, meow, what do you say?
+Meow, meow, let's play today!
+You're my pet, I love you so,
+Purr, purr, don’t ever go!"""
+
+
+
+#song_data = generate_song(custom_lyrics)
+
+#song_data = custom_generate(prompt=custom_lyrics)
+
+"""if song_data:
+    song_id = song_data[0]["id"]
+    get_aligned_lyrics(song_id)
+    print("✅ DONE!")"""
+
+
