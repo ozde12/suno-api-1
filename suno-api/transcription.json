@@ -1,0 +1,1244 @@
+{
+    "text": " \ud83c\udfb5 Fluffy paws and tiny toes Whiskers search wherever it goes Chasing shadows light and fast The silly cat makes a fun last \ud83c\udfb5 Knocks a vase onto the floor Sits and stares like it's not sure Blows the curtains, climbs up high Kitty thinks it can touch the sky \ud83c\udfb5 Meow, meow, let's all play Jumping, spinning every day Flurry friends with tails that sway Cats make every perfect day \ud83c\udfb5 They hide inside the laundry bin Peek their head, a sheepish grin Stealing socks with ninja fangs And a pair of shoes Who needs toys when fun's right there? \ud83c\udfb5 Purring softly in the sun Dreaming dreams of mice to run Curling up all snug and tight Kitty sleeps all through the night Meow, Esta, let's all play Jumping, spinning every day Flurry friends with tails that sway Cats make every perfect day \ud83c\udfb5 \ud83c\udfb5 M \uc57c s\u00e9 ch emerge Sh Beauty shall 1972 Ya te ab c\u00e9\u0131e \ud83c\udfb5 Let's see next questions sunrise move Senado de a cadeare Pu\u00f1ar\u041d\u0435 si con la persona zalida anast\u800c\u5df2 let's meet sun s tech Attack Life to Me What's this? What's this pip kart boat on the bank of the sea? 2 3 Meow Get over Cat, let's play you need a bicycle Sounds a little bold Cat had brought it here To recap \u00a9 BF-WATCH TV 2021 \u00a9 BF-WATCH TV 2021 \u00a9 BF-WATCH TV 2021 \u00a9 BF-WATCH TV 2021 \u00a9 BF-WATCH TV 2021",
+    "segments": [
+        {
+            "id": 0,
+            "seek": 0,
+            "start": 0.0,
+            "end": 0.5,
+            "text": " \ud83c\udfb5",
+            "tokens": [
+                50365,
+                25674,
+                50390
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.31945748525123074,
+            "compression_ratio": 1.323699421965318,
+            "no_speech_prob": 0.14118221402168274
+        },
+        {
+            "id": 1,
+            "seek": 0,
+            "start": 0.5,
+            "end": 10.9,
+            "text": " Fluffy paws and tiny toes",
+            "tokens": [
+                50390,
+                3235,
+                14297,
+                46768,
+                293,
+                5870,
+                14681,
+                50910
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.31945748525123074,
+            "compression_ratio": 1.323699421965318,
+            "no_speech_prob": 0.14118221402168274
+        },
+        {
+            "id": 2,
+            "seek": 0,
+            "start": 10.9,
+            "end": 12.92,
+            "text": " Whiskers search wherever it goes",
+            "tokens": [
+                50910,
+                506,
+                7797,
+                433,
+                3164,
+                8660,
+                309,
+                1709,
+                51011
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.31945748525123074,
+            "compression_ratio": 1.323699421965318,
+            "no_speech_prob": 0.14118221402168274
+        },
+        {
+            "id": 3,
+            "seek": 0,
+            "start": 12.92,
+            "end": 15.08,
+            "text": " Chasing shadows light and fast",
+            "tokens": [
+                51011,
+                761,
+                3349,
+                14740,
+                1442,
+                293,
+                2370,
+                51119
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.31945748525123074,
+            "compression_ratio": 1.323699421965318,
+            "no_speech_prob": 0.14118221402168274
+        },
+        {
+            "id": 4,
+            "seek": 0,
+            "start": 15.08,
+            "end": 17.5,
+            "text": " The silly cat makes a fun last",
+            "tokens": [
+                51119,
+                440,
+                11774,
+                3857,
+                1669,
+                257,
+                1019,
+                1036,
+                51240
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.31945748525123074,
+            "compression_ratio": 1.323699421965318,
+            "no_speech_prob": 0.14118221402168274
+        },
+        {
+            "id": 5,
+            "seek": 0,
+            "start": 17.5,
+            "end": 20.0,
+            "text": " \ud83c\udfb5",
+            "tokens": [
+                51240,
+                25674,
+                51365
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.31945748525123074,
+            "compression_ratio": 1.323699421965318,
+            "no_speech_prob": 0.14118221402168274
+        },
+        {
+            "id": 6,
+            "seek": 0,
+            "start": 20.0,
+            "end": 23.76,
+            "text": " Knocks a vase onto the floor",
+            "tokens": [
+                51365,
+                34017,
+                82,
+                257,
+                44065,
+                3911,
+                264,
+                4123,
+                51553
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.31945748525123074,
+            "compression_ratio": 1.323699421965318,
+            "no_speech_prob": 0.14118221402168274
+        },
+        {
+            "id": 7,
+            "seek": 0,
+            "start": 23.76,
+            "end": 25.900000000000002,
+            "text": " Sits and stares like it's not sure",
+            "tokens": [
+                51553,
+                318,
+                1208,
+                293,
+                342,
+                8643,
+                411,
+                309,
+                311,
+                406,
+                988,
+                51660
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.31945748525123074,
+            "compression_ratio": 1.323699421965318,
+            "no_speech_prob": 0.14118221402168274
+        },
+        {
+            "id": 8,
+            "seek": 0,
+            "start": 25.900000000000002,
+            "end": 28.16,
+            "text": " Blows the curtains, climbs up high",
+            "tokens": [
+                51660,
+                2177,
+                1509,
+                264,
+                36539,
+                11,
+                48439,
+                493,
+                1090,
+                51773
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.31945748525123074,
+            "compression_ratio": 1.323699421965318,
+            "no_speech_prob": 0.14118221402168274
+        },
+        {
+            "id": 9,
+            "seek": 2816,
+            "start": 28.16,
+            "end": 30.42,
+            "text": " Kitty thinks it can touch the sky",
+            "tokens": [
+                50365,
+                36393,
+                7309,
+                309,
+                393,
+                2557,
+                264,
+                5443,
+                50478
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.23962717789870042,
+            "compression_ratio": 1.368421052631579,
+            "no_speech_prob": 0.0008011589525267482
+        },
+        {
+            "id": 10,
+            "seek": 2816,
+            "start": 30.42,
+            "end": 34.92,
+            "text": " \ud83c\udfb5",
+            "tokens": [
+                50478,
+                25674,
+                50703
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.23962717789870042,
+            "compression_ratio": 1.368421052631579,
+            "no_speech_prob": 0.0008011589525267482
+        },
+        {
+            "id": 11,
+            "seek": 2816,
+            "start": 34.92,
+            "end": 36.72,
+            "text": " Meow, meow, let's all play",
+            "tokens": [
+                50703,
+                42996,
+                11,
+                45132,
+                11,
+                718,
+                311,
+                439,
+                862,
+                50793
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.23962717789870042,
+            "compression_ratio": 1.368421052631579,
+            "no_speech_prob": 0.0008011589525267482
+        },
+        {
+            "id": 12,
+            "seek": 2816,
+            "start": 36.72,
+            "end": 38.88,
+            "text": " Jumping, spinning every day",
+            "tokens": [
+                50793,
+                18697,
+                278,
+                11,
+                15640,
+                633,
+                786,
+                50901
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.23962717789870042,
+            "compression_ratio": 1.368421052631579,
+            "no_speech_prob": 0.0008011589525267482
+        },
+        {
+            "id": 13,
+            "seek": 2816,
+            "start": 38.88,
+            "end": 41.019999999999996,
+            "text": " Flurry friends with tails that sway",
+            "tokens": [
+                50901,
+                3235,
+                30614,
+                1855,
+                365,
+                28537,
+                300,
+                27555,
+                51008
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.23962717789870042,
+            "compression_ratio": 1.368421052631579,
+            "no_speech_prob": 0.0008011589525267482
+        },
+        {
+            "id": 14,
+            "seek": 2816,
+            "start": 41.019999999999996,
+            "end": 43.38,
+            "text": " Cats make every perfect day",
+            "tokens": [
+                51008,
+                40902,
+                652,
+                633,
+                2176,
+                786,
+                51126
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.23962717789870042,
+            "compression_ratio": 1.368421052631579,
+            "no_speech_prob": 0.0008011589525267482
+        },
+        {
+            "id": 15,
+            "seek": 2816,
+            "start": 43.38,
+            "end": 51.620000000000005,
+            "text": " \ud83c\udfb5",
+            "tokens": [
+                51126,
+                25674,
+                51538
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.23962717789870042,
+            "compression_ratio": 1.368421052631579,
+            "no_speech_prob": 0.0008011589525267482
+        },
+        {
+            "id": 16,
+            "seek": 2816,
+            "start": 51.620000000000005,
+            "end": 54.120000000000005,
+            "text": " They hide inside the laundry bin",
+            "tokens": [
+                51538,
+                814,
+                6479,
+                1854,
+                264,
+                19811,
+                5171,
+                51663
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.23962717789870042,
+            "compression_ratio": 1.368421052631579,
+            "no_speech_prob": 0.0008011589525267482
+        },
+        {
+            "id": 17,
+            "seek": 2816,
+            "start": 54.120000000000005,
+            "end": 56.2,
+            "text": " Peek their head, a sheepish grin",
+            "tokens": [
+                51663,
+                2396,
+                916,
+                641,
+                1378,
+                11,
+                257,
+                14213,
+                742,
+                49179,
+                51767
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.23962717789870042,
+            "compression_ratio": 1.368421052631579,
+            "no_speech_prob": 0.0008011589525267482
+        },
+        {
+            "id": 18,
+            "seek": 2816,
+            "start": 56.2,
+            "end": 58.120000000000005,
+            "text": " Stealing socks with ninja fangs",
+            "tokens": [
+                51767,
+                3592,
+                4270,
+                17564,
+                365,
+                31604,
+                283,
+                28686,
+                51863
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.23962717789870042,
+            "compression_ratio": 1.368421052631579,
+            "no_speech_prob": 0.0008011589525267482
+        },
+        {
+            "id": 19,
+            "seek": 5816,
+            "start": 58.16,
+            "end": 59.8,
+            "text": " And a pair of shoes",
+            "tokens": [
+                50365,
+                400,
+                257,
+                6119,
+                295,
+                6654,
+                50447
+            ],
+            "temperature": 0.4,
+            "avg_logprob": -0.6645862261454264,
+            "compression_ratio": 1.4337899543378996,
+            "no_speech_prob": 0.0016489325789734721
+        },
+        {
+            "id": 20,
+            "seek": 5816,
+            "start": 59.8,
+            "end": 61.879999999999995,
+            "text": " Who needs toys when fun's right there?",
+            "tokens": [
+                50447,
+                2102,
+                2203,
+                13753,
+                562,
+                1019,
+                311,
+                558,
+                456,
+                30,
+                50551
+            ],
+            "temperature": 0.4,
+            "avg_logprob": -0.6645862261454264,
+            "compression_ratio": 1.4337899543378996,
+            "no_speech_prob": 0.0016489325789734721
+        },
+        {
+            "id": 21,
+            "seek": 5816,
+            "start": 61.879999999999995,
+            "end": 68.88,
+            "text": " \ud83c\udfb5",
+            "tokens": [
+                50551,
+                25674,
+                50901
+            ],
+            "temperature": 0.4,
+            "avg_logprob": -0.6645862261454264,
+            "compression_ratio": 1.4337899543378996,
+            "no_speech_prob": 0.0016489325789734721
+        },
+        {
+            "id": 22,
+            "seek": 5816,
+            "start": 68.88,
+            "end": 70.88,
+            "text": " Purring softly in the sun",
+            "tokens": [
+                50901,
+                14682,
+                2937,
+                30832,
+                294,
+                264,
+                3295,
+                51001
+            ],
+            "temperature": 0.4,
+            "avg_logprob": -0.6645862261454264,
+            "compression_ratio": 1.4337899543378996,
+            "no_speech_prob": 0.0016489325789734721
+        },
+        {
+            "id": 23,
+            "seek": 5816,
+            "start": 70.88,
+            "end": 72.88,
+            "text": " Dreaming dreams of mice to run",
+            "tokens": [
+                51001,
+                12105,
+                278,
+                7505,
+                295,
+                22257,
+                281,
+                1190,
+                51101
+            ],
+            "temperature": 0.4,
+            "avg_logprob": -0.6645862261454264,
+            "compression_ratio": 1.4337899543378996,
+            "no_speech_prob": 0.0016489325789734721
+        },
+        {
+            "id": 24,
+            "seek": 5816,
+            "start": 72.88,
+            "end": 74.88,
+            "text": " Curling up all snug and tight",
+            "tokens": [
+                51101,
+                7907,
+                1688,
+                493,
+                439,
+                37069,
+                293,
+                4524,
+                51201
+            ],
+            "temperature": 0.4,
+            "avg_logprob": -0.6645862261454264,
+            "compression_ratio": 1.4337899543378996,
+            "no_speech_prob": 0.0016489325789734721
+        },
+        {
+            "id": 25,
+            "seek": 5816,
+            "start": 74.88,
+            "end": 76.88,
+            "text": " Kitty sleeps all through the night",
+            "tokens": [
+                51201,
+                36393,
+                37991,
+                439,
+                807,
+                264,
+                1818,
+                51301
+            ],
+            "temperature": 0.4,
+            "avg_logprob": -0.6645862261454264,
+            "compression_ratio": 1.4337899543378996,
+            "no_speech_prob": 0.0016489325789734721
+        },
+        {
+            "id": 26,
+            "seek": 5816,
+            "start": 76.88,
+            "end": 78.88,
+            "text": " Meow, Esta, let's all play",
+            "tokens": [
+                51301,
+                42996,
+                11,
+                20547,
+                11,
+                718,
+                311,
+                439,
+                862,
+                51401
+            ],
+            "temperature": 0.4,
+            "avg_logprob": -0.6645862261454264,
+            "compression_ratio": 1.4337899543378996,
+            "no_speech_prob": 0.0016489325789734721
+        },
+        {
+            "id": 27,
+            "seek": 5816,
+            "start": 78.88,
+            "end": 80.88,
+            "text": " Jumping, spinning every day",
+            "tokens": [
+                51401,
+                18697,
+                278,
+                11,
+                15640,
+                633,
+                786,
+                51501
+            ],
+            "temperature": 0.4,
+            "avg_logprob": -0.6645862261454264,
+            "compression_ratio": 1.4337899543378996,
+            "no_speech_prob": 0.0016489325789734721
+        },
+        {
+            "id": 28,
+            "seek": 5816,
+            "start": 80.88,
+            "end": 82.88,
+            "text": " Flurry friends with tails that sway",
+            "tokens": [
+                51501,
+                3235,
+                30614,
+                1855,
+                365,
+                28537,
+                300,
+                27555,
+                51601
+            ],
+            "temperature": 0.4,
+            "avg_logprob": -0.6645862261454264,
+            "compression_ratio": 1.4337899543378996,
+            "no_speech_prob": 0.0016489325789734721
+        },
+        {
+            "id": 29,
+            "seek": 5816,
+            "start": 82.88,
+            "end": 84.88,
+            "text": " Cats make every perfect day",
+            "tokens": [
+                51601,
+                40902,
+                652,
+                633,
+                2176,
+                786,
+                51701
+            ],
+            "temperature": 0.4,
+            "avg_logprob": -0.6645862261454264,
+            "compression_ratio": 1.4337899543378996,
+            "no_speech_prob": 0.0016489325789734721
+        },
+        {
+            "id": 30,
+            "seek": 5816,
+            "start": 84.88,
+            "end": 86.84,
+            "text": " \ud83c\udfb5",
+            "tokens": [
+                51701,
+                25674,
+                51799
+            ],
+            "temperature": 0.4,
+            "avg_logprob": -0.6645862261454264,
+            "compression_ratio": 1.4337899543378996,
+            "no_speech_prob": 0.0016489325789734721
+        },
+        {
+            "id": 31,
+            "seek": 5816,
+            "start": 86.84,
+            "end": 88.03999999999999,
+            "text": " \ud83c\udfb5",
+            "tokens": [
+                51799,
+                25674,
+                51859
+            ],
+            "temperature": 0.4,
+            "avg_logprob": -0.6645862261454264,
+            "compression_ratio": 1.4337899543378996,
+            "no_speech_prob": 0.0016489325789734721
+        },
+        {
+            "id": 32,
+            "seek": 8816,
+            "start": 88.16,
+            "end": 90.16,
+            "text": " M \uc57c s\u00e9 ch emerge",
+            "tokens": [
+                50365,
+                376,
+                13450,
+                7910,
+                417,
+                21511,
+                50465
+            ],
+            "temperature": 1.0,
+            "avg_logprob": -4.926518793706293,
+            "compression_ratio": 1.3135888501742161,
+            "no_speech_prob": 0.06313534080982208
+        },
+        {
+            "id": 33,
+            "seek": 8816,
+            "start": 90.16,
+            "end": 93.16,
+            "text": " Sh Beauty shall 1972",
+            "tokens": [
+                50465,
+                1160,
+                21450,
+                4393,
+                32952,
+                50615
+            ],
+            "temperature": 1.0,
+            "avg_logprob": -4.926518793706293,
+            "compression_ratio": 1.3135888501742161,
+            "no_speech_prob": 0.06313534080982208
+        },
+        {
+            "id": 34,
+            "seek": 8816,
+            "start": 93.16,
+            "end": 94.36,
+            "text": " Ya te ab c\u00e9\u0131e",
+            "tokens": [
+                50615,
+                6080,
+                535,
+                410,
+                30560,
+                699,
+                68,
+                50675
+            ],
+            "temperature": 1.0,
+            "avg_logprob": -4.926518793706293,
+            "compression_ratio": 1.3135888501742161,
+            "no_speech_prob": 0.06313534080982208
+        },
+        {
+            "id": 35,
+            "seek": 8816,
+            "start": 94.36,
+            "end": 95.6,
+            "text": " \ud83c\udfb5",
+            "tokens": [
+                50675,
+                25674,
+                50737
+            ],
+            "temperature": 1.0,
+            "avg_logprob": -4.926518793706293,
+            "compression_ratio": 1.3135888501742161,
+            "no_speech_prob": 0.06313534080982208
+        },
+        {
+            "id": 36,
+            "seek": 8816,
+            "start": 95.6,
+            "end": 96.92,
+            "text": " Let's see next questions",
+            "tokens": [
+                50737,
+                961,
+                311,
+                536,
+                958,
+                1651,
+                50803
+            ],
+            "temperature": 1.0,
+            "avg_logprob": -4.926518793706293,
+            "compression_ratio": 1.3135888501742161,
+            "no_speech_prob": 0.06313534080982208
+        },
+        {
+            "id": 37,
+            "seek": 8816,
+            "start": 96.92,
+            "end": 98.25999999999999,
+            "text": " sunrise move",
+            "tokens": [
+                50803,
+                33675,
+                1286,
+                50870
+            ],
+            "temperature": 1.0,
+            "avg_logprob": -4.926518793706293,
+            "compression_ratio": 1.3135888501742161,
+            "no_speech_prob": 0.06313534080982208
+        },
+        {
+            "id": 38,
+            "seek": 8816,
+            "start": 98.25999999999999,
+            "end": 99.28,
+            "text": " Senado de a cadeare",
+            "tokens": [
+                50870,
+                3862,
+                1573,
+                368,
+                257,
+                37571,
+                543,
+                50921
+            ],
+            "temperature": 1.0,
+            "avg_logprob": -4.926518793706293,
+            "compression_ratio": 1.3135888501742161,
+            "no_speech_prob": 0.06313534080982208
+        },
+        {
+            "id": 39,
+            "seek": 8816,
+            "start": 99.28,
+            "end": 100.67999999999999,
+            "text": " Pu\u00f1ar\u041d\u0435 si con la persona",
+            "tokens": [
+                50921,
+                13605,
+                2791,
+                289,
+                32297,
+                1511,
+                416,
+                635,
+                12184,
+                50991
+            ],
+            "temperature": 1.0,
+            "avg_logprob": -4.926518793706293,
+            "compression_ratio": 1.3135888501742161,
+            "no_speech_prob": 0.06313534080982208
+        },
+        {
+            "id": 40,
+            "seek": 8816,
+            "start": 100.67999999999999,
+            "end": 101.66,
+            "text": " zalida",
+            "tokens": [
+                50991,
+                29599,
+                2887,
+                51040
+            ],
+            "temperature": 1.0,
+            "avg_logprob": -4.926518793706293,
+            "compression_ratio": 1.3135888501742161,
+            "no_speech_prob": 0.06313534080982208
+        },
+        {
+            "id": 41,
+            "seek": 8816,
+            "start": 101.66,
+            "end": 102.72,
+            "text": " anast\u800c\u5df2",
+            "tokens": [
+                51040,
+                364,
+                525,
+                48420,
+                51093
+            ],
+            "temperature": 1.0,
+            "avg_logprob": -4.926518793706293,
+            "compression_ratio": 1.3135888501742161,
+            "no_speech_prob": 0.06313534080982208
+        },
+        {
+            "id": 42,
+            "seek": 8816,
+            "start": 102.72,
+            "end": 103.67999999999999,
+            "text": " let's meet sun",
+            "tokens": [
+                51093,
+                718,
+                311,
+                1677,
+                3295,
+                51141
+            ],
+            "temperature": 1.0,
+            "avg_logprob": -4.926518793706293,
+            "compression_ratio": 1.3135888501742161,
+            "no_speech_prob": 0.06313534080982208
+        },
+        {
+            "id": 43,
+            "seek": 8816,
+            "start": 103.67999999999999,
+            "end": 104.46,
+            "text": " s tech Attack",
+            "tokens": [
+                51141,
+                262,
+                7553,
+                22477,
+                51180
+            ],
+            "temperature": 1.0,
+            "avg_logprob": -4.926518793706293,
+            "compression_ratio": 1.3135888501742161,
+            "no_speech_prob": 0.06313534080982208
+        },
+        {
+            "id": 44,
+            "seek": 8816,
+            "start": 104.46,
+            "end": 105.5,
+            "text": " Life to Me",
+            "tokens": [
+                51180,
+                7720,
+                281,
+                1923,
+                51232
+            ],
+            "temperature": 1.0,
+            "avg_logprob": -4.926518793706293,
+            "compression_ratio": 1.3135888501742161,
+            "no_speech_prob": 0.06313534080982208
+        },
+        {
+            "id": 45,
+            "seek": 8816,
+            "start": 105.5,
+            "end": 106.42,
+            "text": " What's this?",
+            "tokens": [
+                51232,
+                708,
+                311,
+                341,
+                30,
+                51278
+            ],
+            "temperature": 1.0,
+            "avg_logprob": -4.926518793706293,
+            "compression_ratio": 1.3135888501742161,
+            "no_speech_prob": 0.06313534080982208
+        },
+        {
+            "id": 46,
+            "seek": 8816,
+            "start": 106.42,
+            "end": 107.02,
+            "text": " What's this pip kart boat on the bank of the sea?",
+            "tokens": [
+                51278,
+                708,
+                311,
+                341,
+                8489,
+                29120,
+                6582,
+                322,
+                264,
+                3765,
+                295,
+                264,
+                4158,
+                30,
+                51308
+            ],
+            "temperature": 1.0,
+            "avg_logprob": -4.926518793706293,
+            "compression_ratio": 1.3135888501742161,
+            "no_speech_prob": 0.06313534080982208
+        },
+        {
+            "id": 47,
+            "seek": 8816,
+            "start": 107.44,
+            "end": 108.82,
+            "text": " 2",
+            "tokens": [
+                51329,
+                568,
+                51398
+            ],
+            "temperature": 1.0,
+            "avg_logprob": -4.926518793706293,
+            "compression_ratio": 1.3135888501742161,
+            "no_speech_prob": 0.06313534080982208
+        },
+        {
+            "id": 48,
+            "seek": 8816,
+            "start": 108.82,
+            "end": 110.36,
+            "text": " 3",
+            "tokens": [
+                51398,
+                805,
+                51475
+            ],
+            "temperature": 1.0,
+            "avg_logprob": -4.926518793706293,
+            "compression_ratio": 1.3135888501742161,
+            "no_speech_prob": 0.06313534080982208
+        },
+        {
+            "id": 49,
+            "seek": 8816,
+            "start": 110.78,
+            "end": 111.72,
+            "text": " Meow",
+            "tokens": [
+                51496,
+                42996,
+                51543
+            ],
+            "temperature": 1.0,
+            "avg_logprob": -4.926518793706293,
+            "compression_ratio": 1.3135888501742161,
+            "no_speech_prob": 0.06313534080982208
+        },
+        {
+            "id": 50,
+            "seek": 8816,
+            "start": 111.72,
+            "end": 111.74,
+            "text": " Get over",
+            "tokens": [
+                51543,
+                3240,
+                670,
+                51544
+            ],
+            "temperature": 1.0,
+            "avg_logprob": -4.926518793706293,
+            "compression_ratio": 1.3135888501742161,
+            "no_speech_prob": 0.06313534080982208
+        },
+        {
+            "id": 51,
+            "seek": 8816,
+            "start": 111.74,
+            "end": 115.28,
+            "text": " Cat, let's play",
+            "tokens": [
+                51544,
+                9565,
+                11,
+                718,
+                311,
+                862,
+                51721
+            ],
+            "temperature": 1.0,
+            "avg_logprob": -4.926518793706293,
+            "compression_ratio": 1.3135888501742161,
+            "no_speech_prob": 0.06313534080982208
+        },
+        {
+            "id": 52,
+            "seek": 8816,
+            "start": 115.28,
+            "end": 116.5,
+            "text": " you need a bicycle",
+            "tokens": [
+                51721,
+                291,
+                643,
+                257,
+                20888,
+                51782
+            ],
+            "temperature": 1.0,
+            "avg_logprob": -4.926518793706293,
+            "compression_ratio": 1.3135888501742161,
+            "no_speech_prob": 0.06313534080982208
+        },
+        {
+            "id": 53,
+            "seek": 8816,
+            "start": 116.5,
+            "end": 116.67999999999999,
+            "text": " Sounds a little bold",
+            "tokens": [
+                51782,
+                14576,
+                257,
+                707,
+                11928,
+                51791
+            ],
+            "temperature": 1.0,
+            "avg_logprob": -4.926518793706293,
+            "compression_ratio": 1.3135888501742161,
+            "no_speech_prob": 0.06313534080982208
+        },
+        {
+            "id": 54,
+            "seek": 8816,
+            "start": 116.67999999999999,
+            "end": 116.96,
+            "text": " Cat had brought it here",
+            "tokens": [
+                51791,
+                9565,
+                632,
+                3038,
+                309,
+                510,
+                51805
+            ],
+            "temperature": 1.0,
+            "avg_logprob": -4.926518793706293,
+            "compression_ratio": 1.3135888501742161,
+            "no_speech_prob": 0.06313534080982208
+        },
+        {
+            "id": 55,
+            "seek": 8816,
+            "start": 116.96,
+            "end": 117.84,
+            "text": " To recap",
+            "tokens": [
+                51805,
+                1407,
+                20928,
+                51849
+            ],
+            "temperature": 1.0,
+            "avg_logprob": -4.926518793706293,
+            "compression_ratio": 1.3135888501742161,
+            "no_speech_prob": 0.06313534080982208
+        },
+        {
+            "id": 56,
+            "seek": 11816,
+            "start": 118.16,
+            "end": 148.14,
+            "text": " \u00a9 BF-WATCH TV 2021",
+            "tokens": [
+                50365,
+                1815,
+                102,
+                363,
+                37,
+                12,
+                54,
+                2218,
+                5462,
+                3558,
+                7201,
+                51864
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.12673331224001372,
+            "compression_ratio": 0.7037037037037037,
+            "no_speech_prob": 0.7840024828910828
+        },
+        {
+            "id": 57,
+            "seek": 14816,
+            "start": 148.16,
+            "end": 178.14,
+            "text": " \u00a9 BF-WATCH TV 2021",
+            "tokens": [
+                50365,
+                1815,
+                102,
+                363,
+                37,
+                12,
+                54,
+                2218,
+                5462,
+                3558,
+                7201,
+                51864
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.006058132992340968,
+            "compression_ratio": 0.7037037037037037,
+            "no_speech_prob": 0.053939905017614365
+        },
+        {
+            "id": 58,
+            "seek": 17816,
+            "start": 178.16,
+            "end": 208.14,
+            "text": " \u00a9 BF-WATCH TV 2021",
+            "tokens": [
+                50365,
+                1815,
+                102,
+                363,
+                37,
+                12,
+                54,
+                2218,
+                5462,
+                3558,
+                7201,
+                51864
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.0172023933667403,
+            "compression_ratio": 0.7037037037037037,
+            "no_speech_prob": 0.040242865681648254
+        },
+        {
+            "id": 59,
+            "seek": 20816,
+            "start": 208.16,
+            "end": 238.14,
+            "text": " \u00a9 BF-WATCH TV 2021",
+            "tokens": [
+                50365,
+                1815,
+                102,
+                363,
+                37,
+                12,
+                54,
+                2218,
+                5462,
+                3558,
+                7201,
+                51864
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.022863005216305073,
+            "compression_ratio": 0.7037037037037037,
+            "no_speech_prob": 0.18233704566955566
+        },
+        {
+            "id": 60,
+            "seek": 23816,
+            "start": 238.16,
+            "end": 268.14,
+            "text": " \u00a9 BF-WATCH TV 2021",
+            "tokens": [
+                50365,
+                1815,
+                102,
+                363,
+                37,
+                12,
+                54,
+                2218,
+                5462,
+                3558,
+                7201,
+                51864
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.19354101327749398,
+            "compression_ratio": 0.7037037037037037,
+            "no_speech_prob": 0.20790748298168182
+        }
+    ],
+    "language": "en"
+}

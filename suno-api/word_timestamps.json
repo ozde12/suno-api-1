@@ -1,0 +1,1580 @@
+{
+    "text": " Pheasant Tiny Jogs Liscrish Which Wherever It Goes Jacing Shadows Light and Fast As Silly That Makes That Fun Last Noxivase Onto The Floor Sits In Stairs Like It's Not Sure Pause The Curtains Climes Up High Kitty Things That Can Touch The Sky Mew, meow, let's all play Jumping, spinning, everyday Flurry friends with tails that sway Cats make every perfect day They hide inside the laundry bin Heak, fair, head, a sheepish grin Stealing socks with ninja flair Who needs toys when fun's right there Purring softly in the sun Dreaming dreams of mice to run Curling up all snug and tight Kitty sleeps all through the knife Mew, meow, let's all play Jumping, spinning, everyday Flurry friends with tails that sway Cats make every perfect day Flurry friends with tails that sway Cats make every perfect day Flurry friends with tails that sway Cats make every perfect day Thank you.",
+    "segments": [
+        {
+            "id": 0,
+            "seek": 0,
+            "start": 8.98,
+            "end": 11.0,
+            "text": " Pheasant Tiny Jogs",
+            "tokens": [
+                50364,
+                430,
+                675,
+                10633,
+                39992,
+                508,
+                664,
+                82,
+                50525
+            ],
+            "temperature": 0.6,
+            "avg_logprob": -0.9507442116737366,
+            "compression_ratio": 1.8756218905472637,
+            "no_speech_prob": 0.5695755481719971,
+            "words": [
+                {
+                    "word": " Pheasant",
+                    "start": 8.98,
+                    "end": 9.66,
+                    "probability": 0.05300098673130075
+                },
+                {
+                    "word": " Tiny",
+                    "start": 9.66,
+                    "end": 10.34,
+                    "probability": 0.08818372339010239
+                },
+                {
+                    "word": " Jogs",
+                    "start": 10.34,
+                    "end": 11.0,
+                    "probability": 0.2707744762301445
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "seek": 0,
+            "start": 11.0,
+            "end": 12.84,
+            "text": " Liscrish Which Wherever It Goes",
+            "tokens": [
+                50525,
+                441,
+                5606,
+                81,
+                742,
+                3013,
+                30903,
+                467,
+                44471,
+                50675
+            ],
+            "temperature": 0.6,
+            "avg_logprob": -0.9507442116737366,
+            "compression_ratio": 1.8756218905472637,
+            "no_speech_prob": 0.5695755481719971,
+            "words": [
+                {
+                    "word": " Liscrish",
+                    "start": 11.0,
+                    "end": 11.56,
+                    "probability": 0.19522825442254543
+                },
+                {
+                    "word": " Which",
+                    "start": 11.56,
+                    "end": 11.76,
+                    "probability": 0.07515869289636612
+                },
+                {
+                    "word": " Wherever",
+                    "start": 11.76,
+                    "end": 12.14,
+                    "probability": 0.8417500853538513
+                },
+                {
+                    "word": " It",
+                    "start": 12.14,
+                    "end": 12.6,
+                    "probability": 0.6736905574798584
+                },
+                {
+                    "word": " Goes",
+                    "start": 12.6,
+                    "end": 12.84,
+                    "probability": 0.9862327575683594
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "seek": 0,
+            "start": 12.84,
+            "end": 15.68,
+            "text": " Jacing Shadows Light and Fast As Silly",
+            "tokens": [
+                50675,
+                508,
+                5615,
+                1160,
+                33480,
+                8279,
+                293,
+                15968,
+                1018,
+                318,
+                6917,
+                50787
+            ],
+            "temperature": 0.6,
+            "avg_logprob": -0.9507442116737366,
+            "compression_ratio": 1.8756218905472637,
+            "no_speech_prob": 0.5695755481719971,
+            "words": [
+                {
+                    "word": " Jacing",
+                    "start": 12.84,
+                    "end": 13.58,
+                    "probability": 0.3558797240257263
+                },
+                {
+                    "word": " Shadows",
+                    "start": 13.58,
+                    "end": 14.12,
+                    "probability": 0.9238554835319519
+                },
+                {
+                    "word": " Light",
+                    "start": 14.12,
+                    "end": 14.46,
+                    "probability": 0.9546411037445068
+                },
+                {
+                    "word": " and",
+                    "start": 14.46,
+                    "end": 14.7,
+                    "probability": 0.47673559188842773
+                },
+                {
+                    "word": " Fast",
+                    "start": 14.7,
+                    "end": 14.96,
+                    "probability": 0.8688275218009949
+                },
+                {
+                    "word": " As",
+                    "start": 14.96,
+                    "end": 15.3,
+                    "probability": 0.45651742815971375
+                },
+                {
+                    "word": " Silly",
+                    "start": 15.3,
+                    "end": 15.68,
+                    "probability": 0.8696485161781311
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "seek": 0,
+            "start": 15.68,
+            "end": 17.44,
+            "text": " That Makes That Fun Last",
+            "tokens": [
+                50787,
+                663,
+                25245,
+                663,
+                11166,
+                5264,
+                50921
+            ],
+            "temperature": 0.6,
+            "avg_logprob": -0.9507442116737366,
+            "compression_ratio": 1.8756218905472637,
+            "no_speech_prob": 0.5695755481719971,
+            "words": [
+                {
+                    "word": " That",
+                    "start": 15.68,
+                    "end": 16.1,
+                    "probability": 0.08504997193813324
+                },
+                {
+                    "word": " Makes",
+                    "start": 16.1,
+                    "end": 16.36,
+                    "probability": 0.8750936985015869
+                },
+                {
+                    "word": " That",
+                    "start": 16.36,
+                    "end": 16.56,
+                    "probability": 0.4466392993927002
+                },
+                {
+                    "word": " Fun",
+                    "start": 16.56,
+                    "end": 16.76,
+                    "probability": 0.6086789965629578
+                },
+                {
+                    "word": " Last",
+                    "start": 16.76,
+                    "end": 17.44,
+                    "probability": 0.9625115990638733
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "seek": 0,
+            "start": 21.92,
+            "end": 23.82,
+            "text": " Noxivase Onto The Floor",
+            "tokens": [
+                50921,
+                883,
+                87,
+                592,
+                651,
+                16980,
+                78,
+                440,
+                15153,
+                284,
+                51031
+            ],
+            "temperature": 0.6,
+            "avg_logprob": -0.9507442116737366,
+            "compression_ratio": 1.8756218905472637,
+            "no_speech_prob": 0.5695755481719971,
+            "words": [
+                {
+                    "word": " Noxivase",
+                    "start": 21.92,
+                    "end": 22.6,
+                    "probability": 0.6743520051240921
+                },
+                {
+                    "word": " Onto",
+                    "start": 22.6,
+                    "end": 23.12,
+                    "probability": 0.7541219890117645
+                },
+                {
+                    "word": " The",
+                    "start": 23.12,
+                    "end": 23.34,
+                    "probability": 0.7503921985626221
+                },
+                {
+                    "word": " Floor",
+                    "start": 23.34,
+                    "end": 23.82,
+                    "probability": 0.8972634375095367
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "seek": 0,
+            "start": 23.82,
+            "end": 25.86,
+            "text": " Sits In Stairs Like It's Not Sure",
+            "tokens": [
+                51031,
+                318,
+                1208,
+                682,
+                745,
+                4094,
+                1743,
+                467,
+                311,
+                1726,
+                4894,
+                51131
+            ],
+            "temperature": 0.6,
+            "avg_logprob": -0.9507442116737366,
+            "compression_ratio": 1.8756218905472637,
+            "no_speech_prob": 0.5695755481719971,
+            "words": [
+                {
+                    "word": " Sits",
+                    "start": 23.82,
+                    "end": 24.24,
+                    "probability": 0.793860524892807
+                },
+                {
+                    "word": " In",
+                    "start": 24.24,
+                    "end": 24.48,
+                    "probability": 0.1998807042837143
+                },
+                {
+                    "word": " Stairs",
+                    "start": 24.48,
+                    "end": 24.76,
+                    "probability": 0.945995569229126
+                },
+                {
+                    "word": " Like",
+                    "start": 24.76,
+                    "end": 25.04,
+                    "probability": 0.9500666856765747
+                },
+                {
+                    "word": " It's",
+                    "start": 25.04,
+                    "end": 25.34,
+                    "probability": 0.9393075406551361
+                },
+                {
+                    "word": " Not",
+                    "start": 25.34,
+                    "end": 25.52,
+                    "probability": 0.9748982191085815
+                },
+                {
+                    "word": " Sure",
+                    "start": 25.52,
+                    "end": 25.86,
+                    "probability": 0.9598051905632019
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "seek": 0,
+            "start": 25.86,
+            "end": 28.12,
+            "text": " Pause The Curtains Climes Up High",
+            "tokens": [
+                51131,
+                31973,
+                440,
+                26587,
+                2315,
+                2033,
+                1532,
+                5858,
+                5229,
+                51241
+            ],
+            "temperature": 0.6,
+            "avg_logprob": -0.9507442116737366,
+            "compression_ratio": 1.8756218905472637,
+            "no_speech_prob": 0.5695755481719971,
+            "words": [
+                {
+                    "word": " Pause",
+                    "start": 25.86,
+                    "end": 26.38,
+                    "probability": 0.033501699566841125
+                },
+                {
+                    "word": " The",
+                    "start": 26.38,
+                    "end": 26.62,
+                    "probability": 0.8490028381347656
+                },
+                {
+                    "word": " Curtains",
+                    "start": 26.62,
+                    "end": 27.12,
+                    "probability": 0.6328793466091156
+                },
+                {
+                    "word": " Climes",
+                    "start": 27.12,
+                    "end": 27.56,
+                    "probability": 0.5738581418991089
+                },
+                {
+                    "word": " Up",
+                    "start": 27.56,
+                    "end": 27.72,
+                    "probability": 0.6098185181617737
+                },
+                {
+                    "word": " High",
+                    "start": 27.72,
+                    "end": 28.12,
+                    "probability": 0.8519104719161987
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "seek": 0,
+            "start": 28.12,
+            "end": 29.98,
+            "text": " Kitty Things That Can Touch The Sky",
+            "tokens": [
+                51241,
+                36393,
+                9514,
+                663,
+                1664,
+                20029,
+                440,
+                9879,
+                51358
+            ],
+            "temperature": 0.6,
+            "avg_logprob": -0.9507442116737366,
+            "compression_ratio": 1.8756218905472637,
+            "no_speech_prob": 0.5695755481719971,
+            "words": [
+                {
+                    "word": " Kitty",
+                    "start": 28.12,
+                    "end": 28.72,
+                    "probability": 0.5208392143249512
+                },
+                {
+                    "word": " Things",
+                    "start": 28.72,
+                    "end": 29.02,
+                    "probability": 0.8369396924972534
+                },
+                {
+                    "word": " That",
+                    "start": 29.02,
+                    "end": 29.18,
+                    "probability": 0.35612842440605164
+                },
+                {
+                    "word": " Can",
+                    "start": 29.18,
+                    "end": 29.32,
+                    "probability": 0.9897080659866333
+                },
+                {
+                    "word": " Touch",
+                    "start": 29.32,
+                    "end": 29.6,
+                    "probability": 0.995465099811554
+                },
+                {
+                    "word": " The",
+                    "start": 29.6,
+                    "end": 29.84,
+                    "probability": 0.8962638974189758
+                },
+                {
+                    "word": " Sky",
+                    "start": 29.84,
+                    "end": 29.98,
+                    "probability": 0.6414270401000977
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "seek": 0,
+            "start": 29.98,
+            "end": 29.98,
+            "text": "",
+            "tokens": [],
+            "temperature": 0.6,
+            "avg_logprob": -0.9507442116737366,
+            "compression_ratio": 1.8756218905472637,
+            "no_speech_prob": 0.5695755481719971,
+            "words": []
+        },
+        {
+            "id": 9,
+            "seek": 0,
+            "start": 29.98,
+            "end": 29.98,
+            "text": "",
+            "tokens": [],
+            "temperature": 0.6,
+            "avg_logprob": -0.9507442116737366,
+            "compression_ratio": 1.8756218905472637,
+            "no_speech_prob": 0.5695755481719971,
+            "words": []
+        },
+        {
+            "id": 10,
+            "seek": 0,
+            "start": 29.98,
+            "end": 29.98,
+            "text": "",
+            "tokens": [],
+            "temperature": 0.6,
+            "avg_logprob": -0.9507442116737366,
+            "compression_ratio": 1.8756218905472637,
+            "no_speech_prob": 0.5695755481719971,
+            "words": []
+        },
+        {
+            "id": 11,
+            "seek": 0,
+            "start": 29.98,
+            "end": 29.98,
+            "text": "",
+            "tokens": [],
+            "temperature": 0.6,
+            "avg_logprob": -0.9507442116737366,
+            "compression_ratio": 1.8756218905472637,
+            "no_speech_prob": 0.5695755481719971,
+            "words": []
+        },
+        {
+            "id": 12,
+            "seek": 0,
+            "start": 29.98,
+            "end": 29.98,
+            "text": "",
+            "tokens": [],
+            "temperature": 0.6,
+            "avg_logprob": -0.9507442116737366,
+            "compression_ratio": 1.8756218905472637,
+            "no_speech_prob": 0.5695755481719971,
+            "words": []
+        },
+        {
+            "id": 13,
+            "seek": 2998,
+            "start": 34.620000000000005,
+            "end": 38.66,
+            "text": " Mew, meow, let's all play Jumping, spinning, everyday",
+            "tokens": [
+                50364,
+                376,
+                1023,
+                11,
+                45132,
+                11,
+                718,
+                311,
+                439,
+                862,
+                18697,
+                278,
+                11,
+                15640,
+                11,
+                7429,
+                50814
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.40621144954974836,
+            "compression_ratio": 1.3142857142857143,
+            "no_speech_prob": 0.9088289737701416,
+            "words": [
+                {
+                    "word": " Mew,",
+                    "start": 34.620000000000005,
+                    "end": 35.24,
+                    "probability": 0.2760637770406902
+                },
+                {
+                    "word": " meow,",
+                    "start": 35.38,
+                    "end": 35.58,
+                    "probability": 0.41046029329299927
+                },
+                {
+                    "word": " let's",
+                    "start": 35.8,
+                    "end": 36.24,
+                    "probability": 0.8987860083580017
+                },
+                {
+                    "word": " all",
+                    "start": 36.24,
+                    "end": 36.38,
+                    "probability": 0.99029541015625
+                },
+                {
+                    "word": " play",
+                    "start": 36.38,
+                    "end": 36.7,
+                    "probability": 0.9882553815841675
+                },
+                {
+                    "word": " Jumping,",
+                    "start": 36.7,
+                    "end": 37.44,
+                    "probability": 0.8412600159645081
+                },
+                {
+                    "word": " spinning,",
+                    "start": 37.52,
+                    "end": 37.92,
+                    "probability": 0.9933346509933472
+                },
+                {
+                    "word": " everyday",
+                    "start": 38.02,
+                    "end": 38.66,
+                    "probability": 0.5707380771636963
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "seek": 2998,
+            "start": 38.66,
+            "end": 43.3,
+            "text": " Flurry friends with tails that sway Cats make every perfect day",
+            "tokens": [
+                50814,
+                3235,
+                30614,
+                1855,
+                365,
+                28537,
+                300,
+                27555,
+                40902,
+                652,
+                633,
+                2176,
+                786,
+                51014
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.40621144954974836,
+            "compression_ratio": 1.3142857142857143,
+            "no_speech_prob": 0.9088289737701416,
+            "words": [
+                {
+                    "word": " Flurry",
+                    "start": 38.66,
+                    "end": 39.5,
+                    "probability": 0.8591499030590057
+                },
+                {
+                    "word": " friends",
+                    "start": 39.5,
+                    "end": 39.94,
+                    "probability": 0.5463739037513733
+                },
+                {
+                    "word": " with",
+                    "start": 39.94,
+                    "end": 40.16,
+                    "probability": 0.9336265325546265
+                },
+                {
+                    "word": " tails",
+                    "start": 40.16,
+                    "end": 40.44,
+                    "probability": 0.7243728041648865
+                },
+                {
+                    "word": " that",
+                    "start": 40.44,
+                    "end": 40.7,
+                    "probability": 0.46127617359161377
+                },
+                {
+                    "word": " sway",
+                    "start": 40.7,
+                    "end": 41.0,
+                    "probability": 0.8551529049873352
+                },
+                {
+                    "word": " Cats",
+                    "start": 41.0,
+                    "end": 41.54,
+                    "probability": 0.9433869123458862
+                },
+                {
+                    "word": " make",
+                    "start": 41.54,
+                    "end": 41.84,
+                    "probability": 0.9829170107841492
+                },
+                {
+                    "word": " every",
+                    "start": 41.84,
+                    "end": 42.3,
+                    "probability": 0.989971399307251
+                },
+                {
+                    "word": " perfect",
+                    "start": 42.3,
+                    "end": 42.74,
+                    "probability": 0.9946513772010803
+                },
+                {
+                    "word": " day",
+                    "start": 42.74,
+                    "end": 43.3,
+                    "probability": 0.9976863861083984
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "seek": 2998,
+            "start": 51.580000000000005,
+            "end": 56.18,
+            "text": " They hide inside the laundry bin Heak, fair, head, a sheepish grin",
+            "tokens": [
+                51014,
+                814,
+                6479,
+                1854,
+                264,
+                19811,
+                5171,
+                634,
+                514,
+                11,
+                3143,
+                11,
+                1378,
+                11,
+                257,
+                14213,
+                742,
+                49179,
+                51664
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.40621144954974836,
+            "compression_ratio": 1.3142857142857143,
+            "no_speech_prob": 0.9088289737701416,
+            "words": [
+                {
+                    "word": " They",
+                    "start": 51.580000000000005,
+                    "end": 52.2,
+                    "probability": 0.5649826526641846
+                },
+                {
+                    "word": " hide",
+                    "start": 52.2,
+                    "end": 52.46,
+                    "probability": 0.9975305199623108
+                },
+                {
+                    "word": " inside",
+                    "start": 52.46,
+                    "end": 52.92,
+                    "probability": 0.9922420978546143
+                },
+                {
+                    "word": " the",
+                    "start": 52.92,
+                    "end": 53.2,
+                    "probability": 0.9702900648117065
+                },
+                {
+                    "word": " laundry",
+                    "start": 53.2,
+                    "end": 53.64,
+                    "probability": 0.9947733283042908
+                },
+                {
+                    "word": " bin",
+                    "start": 53.64,
+                    "end": 54.1,
+                    "probability": 0.9975379705429077
+                },
+                {
+                    "word": " Heak,",
+                    "start": 54.1,
+                    "end": 54.66,
+                    "probability": 0.38989217579364777
+                },
+                {
+                    "word": " fair,",
+                    "start": 54.74,
+                    "end": 54.82,
+                    "probability": 0.9727864265441895
+                },
+                {
+                    "word": " head,",
+                    "start": 54.88,
+                    "end": 55.18,
+                    "probability": 0.5606794357299805
+                },
+                {
+                    "word": " a",
+                    "start": 55.24,
+                    "end": 55.42,
+                    "probability": 0.7477465867996216
+                },
+                {
+                    "word": " sheepish",
+                    "start": 55.42,
+                    "end": 55.86,
+                    "probability": 0.9625599086284637
+                },
+                {
+                    "word": " grin",
+                    "start": 55.86,
+                    "end": 56.18,
+                    "probability": 0.9966387748718262
+                }
+            ]
+        },
+        {
+            "id": 16,
+            "seek": 5618,
+            "start": 56.18,
+            "end": 60.68,
+            "text": " Stealing socks with ninja flair Who needs toys when fun's right there",
+            "tokens": [
+                50364,
+                3592,
+                4270,
+                17564,
+                365,
+                31604,
+                283,
+                24319,
+                2102,
+                2203,
+                13753,
+                562,
+                1019,
+                311,
+                558,
+                456,
+                50614
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.07712227647954767,
+            "compression_ratio": 1.4411764705882353,
+            "no_speech_prob": 0.0712340697646141,
+            "words": [
+                {
+                    "word": " Stealing",
+                    "start": 56.18,
+                    "end": 56.92,
+                    "probability": 0.5534262508153915
+                },
+                {
+                    "word": " socks",
+                    "start": 56.92,
+                    "end": 57.18,
+                    "probability": 0.7588812708854675
+                },
+                {
+                    "word": " with",
+                    "start": 57.18,
+                    "end": 57.58,
+                    "probability": 0.9887592792510986
+                },
+                {
+                    "word": " ninja",
+                    "start": 57.58,
+                    "end": 57.98,
+                    "probability": 0.6150553822517395
+                },
+                {
+                    "word": " flair",
+                    "start": 57.98,
+                    "end": 58.42,
+                    "probability": 0.8708362281322479
+                },
+                {
+                    "word": " Who",
+                    "start": 58.42,
+                    "end": 58.9,
+                    "probability": 0.6076318621635437
+                },
+                {
+                    "word": " needs",
+                    "start": 58.9,
+                    "end": 59.18,
+                    "probability": 0.9844411611557007
+                },
+                {
+                    "word": " toys",
+                    "start": 59.18,
+                    "end": 59.38,
+                    "probability": 0.9916833639144897
+                },
+                {
+                    "word": " when",
+                    "start": 59.38,
+                    "end": 59.68,
+                    "probability": 0.9869745969772339
+                },
+                {
+                    "word": " fun's",
+                    "start": 59.68,
+                    "end": 60.04,
+                    "probability": 0.9580866992473602
+                },
+                {
+                    "word": " right",
+                    "start": 60.04,
+                    "end": 60.24,
+                    "probability": 0.9924237728118896
+                },
+                {
+                    "word": " there",
+                    "start": 60.24,
+                    "end": 60.68,
+                    "probability": 0.988848090171814
+                }
+            ]
+        },
+        {
+            "id": 17,
+            "seek": 5618,
+            "start": 69.3,
+            "end": 73.5,
+            "text": " Purring softly in the sun Dreaming dreams of mice to run",
+            "tokens": [
+                51014,
+                14682,
+                2937,
+                30832,
+                294,
+                264,
+                3295,
+                12105,
+                278,
+                7505,
+                295,
+                22257,
+                281,
+                1190,
+                51214
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.07712227647954767,
+            "compression_ratio": 1.4411764705882353,
+            "no_speech_prob": 0.0712340697646141,
+            "words": [
+                {
+                    "word": " Purring",
+                    "start": 69.3,
+                    "end": 69.94,
+                    "probability": 0.5325855799019337
+                },
+                {
+                    "word": " softly",
+                    "start": 69.94,
+                    "end": 70.4,
+                    "probability": 0.9941745400428772
+                },
+                {
+                    "word": " in",
+                    "start": 70.4,
+                    "end": 70.84,
+                    "probability": 0.9958809614181519
+                },
+                {
+                    "word": " the",
+                    "start": 70.84,
+                    "end": 71.02,
+                    "probability": 0.9993140697479248
+                },
+                {
+                    "word": " sun",
+                    "start": 71.02,
+                    "end": 71.36,
+                    "probability": 0.9588731527328491
+                },
+                {
+                    "word": " Dreaming",
+                    "start": 71.36,
+                    "end": 72.12,
+                    "probability": 0.8773618638515472
+                },
+                {
+                    "word": " dreams",
+                    "start": 72.12,
+                    "end": 72.36,
+                    "probability": 0.9895026683807373
+                },
+                {
+                    "word": " of",
+                    "start": 72.36,
+                    "end": 72.68,
+                    "probability": 0.9986322522163391
+                },
+                {
+                    "word": " mice",
+                    "start": 72.68,
+                    "end": 72.92,
+                    "probability": 0.9658557772636414
+                },
+                {
+                    "word": " to",
+                    "start": 72.92,
+                    "end": 73.2,
+                    "probability": 0.9946934580802917
+                },
+                {
+                    "word": " run",
+                    "start": 73.2,
+                    "end": 73.5,
+                    "probability": 0.997929573059082
+                }
+            ]
+        },
+        {
+            "id": 18,
+            "seek": 5618,
+            "start": 73.5,
+            "end": 77.84,
+            "text": " Curling up all snug and tight Kitty sleeps all through the knife",
+            "tokens": [
+                51214,
+                7907,
+                1688,
+                493,
+                439,
+                37069,
+                293,
+                4524,
+                36393,
+                37991,
+                439,
+                807,
+                264,
+                7976,
+                51464
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.07712227647954767,
+            "compression_ratio": 1.4411764705882353,
+            "no_speech_prob": 0.0712340697646141,
+            "words": [
+                {
+                    "word": " Curling",
+                    "start": 73.5,
+                    "end": 74.24,
+                    "probability": 0.974853903055191
+                },
+                {
+                    "word": " up",
+                    "start": 74.24,
+                    "end": 74.58,
+                    "probability": 0.9982472658157349
+                },
+                {
+                    "word": " all",
+                    "start": 74.58,
+                    "end": 74.78,
+                    "probability": 0.9170417189598083
+                },
+                {
+                    "word": " snug",
+                    "start": 74.78,
+                    "end": 74.98,
+                    "probability": 0.7451929450035095
+                },
+                {
+                    "word": " and",
+                    "start": 74.98,
+                    "end": 75.36,
+                    "probability": 0.9912296533584595
+                },
+                {
+                    "word": " tight",
+                    "start": 75.36,
+                    "end": 75.66,
+                    "probability": 0.9984446167945862
+                },
+                {
+                    "word": " Kitty",
+                    "start": 75.66,
+                    "end": 76.3,
+                    "probability": 0.8439465761184692
+                },
+                {
+                    "word": " sleeps",
+                    "start": 76.3,
+                    "end": 76.62,
+                    "probability": 0.9809276461601257
+                },
+                {
+                    "word": " all",
+                    "start": 76.62,
+                    "end": 76.98,
+                    "probability": 0.9964199066162109
+                },
+                {
+                    "word": " through",
+                    "start": 76.98,
+                    "end": 77.26,
+                    "probability": 0.9862872958183289
+                },
+                {
+                    "word": " the",
+                    "start": 77.26,
+                    "end": 77.52,
+                    "probability": 0.9958969354629517
+                },
+                {
+                    "word": " knife",
+                    "start": 77.52,
+                    "end": 77.84,
+                    "probability": 0.5040983557701111
+                }
+            ]
+        },
+        {
+            "id": 19,
+            "seek": 5618,
+            "start": 77.84,
+            "end": 81.96,
+            "text": " Mew, meow, let's all play Jumping, spinning, everyday",
+            "tokens": [
+                51464,
+                376,
+                1023,
+                11,
+                45132,
+                11,
+                718,
+                311,
+                439,
+                862,
+                18697,
+                278,
+                11,
+                15640,
+                11,
+                7429,
+                51664
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.07712227647954767,
+            "compression_ratio": 1.4411764705882353,
+            "no_speech_prob": 0.0712340697646141,
+            "words": [
+                {
+                    "word": " Mew,",
+                    "start": 77.84,
+                    "end": 78.44,
+                    "probability": 0.14292077720165253
+                },
+                {
+                    "word": " meow,",
+                    "start": 78.72,
+                    "end": 78.88,
+                    "probability": 0.7656253576278687
+                },
+                {
+                    "word": " let's",
+                    "start": 79.12,
+                    "end": 79.6,
+                    "probability": 0.9680154323577881
+                },
+                {
+                    "word": " all",
+                    "start": 79.6,
+                    "end": 79.74,
+                    "probability": 0.9970895648002625
+                },
+                {
+                    "word": " play",
+                    "start": 79.74,
+                    "end": 80.02,
+                    "probability": 0.9984437823295593
+                },
+                {
+                    "word": " Jumping,",
+                    "start": 80.02,
+                    "end": 80.76,
+                    "probability": 0.9817303419113159
+                },
+                {
+                    "word": " spinning,",
+                    "start": 80.86,
+                    "end": 81.18,
+                    "probability": 0.6178774833679199
+                },
+                {
+                    "word": " everyday",
+                    "start": 81.18,
+                    "end": 81.96,
+                    "probability": 0.3147351145744324
+                }
+            ]
+        },
+        {
+            "id": 20,
+            "seek": 8196,
+            "start": 81.96,
+            "end": 86.68,
+            "text": " Flurry friends with tails that sway Cats make every perfect day",
+            "tokens": [
+                50364,
+                3235,
+                30614,
+                1855,
+                365,
+                28537,
+                300,
+                27555,
+                40902,
+                652,
+                633,
+                2176,
+                786,
+                50614
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.044769032796223955,
+            "compression_ratio": 0.9545454545454546,
+            "no_speech_prob": 0.5941063165664673,
+            "words": [
+                {
+                    "word": " Flurry",
+                    "start": 81.96,
+                    "end": 82.88,
+                    "probability": 0.47191240172833204
+                },
+                {
+                    "word": " friends",
+                    "start": 82.88,
+                    "end": 83.3,
+                    "probability": 0.9158992767333984
+                },
+                {
+                    "word": " with",
+                    "start": 83.3,
+                    "end": 83.54,
+                    "probability": 0.9765263199806213
+                },
+                {
+                    "word": " tails",
+                    "start": 83.54,
+                    "end": 83.8,
+                    "probability": 0.8985326290130615
+                },
+                {
+                    "word": " that",
+                    "start": 83.8,
+                    "end": 84.06,
+                    "probability": 0.5819580554962158
+                },
+                {
+                    "word": " sway",
+                    "start": 84.06,
+                    "end": 84.36,
+                    "probability": 0.6911735534667969
+                },
+                {
+                    "word": " Cats",
+                    "start": 84.36,
+                    "end": 84.9,
+                    "probability": 0.34282124042510986
+                },
+                {
+                    "word": " make",
+                    "start": 84.9,
+                    "end": 85.2,
+                    "probability": 0.9854674935340881
+                },
+                {
+                    "word": " every",
+                    "start": 85.2,
+                    "end": 85.68,
+                    "probability": 0.9943367838859558
+                },
+                {
+                    "word": " perfect",
+                    "start": 85.68,
+                    "end": 86.12,
+                    "probability": 0.9974029660224915
+                },
+                {
+                    "word": " day",
+                    "start": 86.12,
+                    "end": 86.68,
+                    "probability": 0.992023229598999
+                }
+            ]
+        },
+        {
+            "id": 21,
+            "seek": 11196,
+            "start": 140.54,
+            "end": 141.94,
+            "text": " Flurry friends with tails that sway Cats make every perfect day",
+            "tokens": [
+                50364,
+                3235,
+                30614,
+                1855,
+                365,
+                28537,
+                300,
+                27555,
+                40902,
+                652,
+                633,
+                2176,
+                786,
+                50614
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.2498126413630343,
+            "compression_ratio": 2.3963963963963963,
+            "no_speech_prob": 0.9227758049964905,
+            "words": [
+                {
+                    "word": " Flurry",
+                    "start": 140.54,
+                    "end": 141.94,
+                    "probability": 0.0008195158952730708
+                },
+                {
+                    "word": " friends",
+                    "start": 141.94,
+                    "end": 141.94,
+                    "probability": 2.3198021153802983e-05
+                },
+                {
+                    "word": " with",
+                    "start": 141.94,
+                    "end": 141.94,
+                    "probability": 0.01375051774084568
+                },
+                {
+                    "word": " tails",
+                    "start": 141.94,
+                    "end": 141.94,
+                    "probability": 2.4551796741434373e-05
+                },
+                {
+                    "word": " that",
+                    "start": 141.94,
+                    "end": 141.94,
+                    "probability": 0.005352504551410675
+                },
+                {
+                    "word": " sway",
+                    "start": 141.94,
+                    "end": 141.94,
+                    "probability": 0.00010205440776189789
+                },
+                {
+                    "word": " Cats",
+                    "start": 141.94,
+                    "end": 141.94,
+                    "probability": 2.1958617253403645e-06
+                },
+                {
+                    "word": " make",
+                    "start": 141.94,
+                    "end": 141.94,
+                    "probability": 0.0012729971203953028
+                },
+                {
+                    "word": " every",
+                    "start": 141.94,
+                    "end": 141.94,
+                    "probability": 0.001982733141630888
+                },
+                {
+                    "word": " perfect",
+                    "start": 141.94,
+                    "end": 141.94,
+                    "probability": 0.00020547023450490087
+                },
+                {
+                    "word": " day",
+                    "start": 141.94,
+                    "end": 141.94,
+                    "probability": 0.0038070152513682842
+                }
+            ]
+        },
+        {
+            "id": 22,
+            "seek": 11196,
+            "start": 141.94,
+            "end": 141.94,
+            "text": "",
+            "tokens": [],
+            "temperature": 0.0,
+            "avg_logprob": -0.2498126413630343,
+            "compression_ratio": 2.3963963963963963,
+            "no_speech_prob": 0.9227758049964905,
+            "words": []
+        },
+        {
+            "id": 23,
+            "seek": 11196,
+            "start": 141.94,
+            "end": 141.94,
+            "text": "",
+            "tokens": [],
+            "temperature": 0.0,
+            "avg_logprob": -0.2498126413630343,
+            "compression_ratio": 2.3963963963963963,
+            "no_speech_prob": 0.9227758049964905,
+            "words": []
+        },
+        {
+            "id": 24,
+            "seek": 11196,
+            "start": 141.94,
+            "end": 141.94,
+            "text": "",
+            "tokens": [],
+            "temperature": 0.0,
+            "avg_logprob": -0.2498126413630343,
+            "compression_ratio": 2.3963963963963963,
+            "no_speech_prob": 0.9227758049964905,
+            "words": []
+        },
+        {
+            "id": 25,
+            "seek": 11196,
+            "start": 141.94,
+            "end": 141.94,
+            "text": "",
+            "tokens": [],
+            "temperature": 0.0,
+            "avg_logprob": -0.2498126413630343,
+            "compression_ratio": 2.3963963963963963,
+            "no_speech_prob": 0.9227758049964905,
+            "words": []
+        },
+        {
+            "id": 26,
+            "seek": 11196,
+            "start": 141.94,
+            "end": 141.94,
+            "text": "",
+            "tokens": [],
+            "temperature": 0.0,
+            "avg_logprob": -0.2498126413630343,
+            "compression_ratio": 2.3963963963963963,
+            "no_speech_prob": 0.9227758049964905,
+            "words": []
+        },
+        {
+            "id": 27,
+            "seek": 17194,
+            "start": 200.51999999999998,
+            "end": 201.92,
+            "text": " Flurry friends with tails that sway Cats make every perfect day",
+            "tokens": [
+                50414,
+                3235,
+                30614,
+                1855,
+                365,
+                28537,
+                300,
+                27555,
+                40902,
+                652,
+                633,
+                2176,
+                786,
+                50764
+            ],
+            "temperature": 0.6,
+            "avg_logprob": -0.7044966816902161,
+            "compression_ratio": 0.9545454545454546,
+            "no_speech_prob": 0.9475826621055603,
+            "words": [
+                {
+                    "word": " Flurry",
+                    "start": 200.51999999999998,
+                    "end": 201.92,
+                    "probability": 0.000922995535802329
+                },
+                {
+                    "word": " friends",
+                    "start": 201.92,
+                    "end": 201.92,
+                    "probability": 2.3948865418788046e-05
+                },
+                {
+                    "word": " with",
+                    "start": 201.92,
+                    "end": 201.92,
+                    "probability": 0.015943503007292747
+                },
+                {
+                    "word": " tails",
+                    "start": 201.92,
+                    "end": 201.92,
+                    "probability": 2.5194040063070133e-05
+                },
+                {
+                    "word": " that",
+                    "start": 201.92,
+                    "end": 201.92,
+                    "probability": 0.005002525169402361
+                },
+                {
+                    "word": " sway",
+                    "start": 201.92,
+                    "end": 201.92,
+                    "probability": 9.178710024571046e-05
+                },
+                {
+                    "word": " Cats",
+                    "start": 201.92,
+                    "end": 201.92,
+                    "probability": 2.1179257601033896e-06
+                },
+                {
+                    "word": " make",
+                    "start": 201.92,
+                    "end": 201.92,
+                    "probability": 0.0012991746189072728
+                },
+                {
+                    "word": " every",
+                    "start": 201.92,
+                    "end": 201.92,
+                    "probability": 0.0020481569226831198
+                },
+                {
+                    "word": " perfect",
+                    "start": 201.92,
+                    "end": 201.92,
+                    "probability": 0.00017809979908633977
+                },
+                {
+                    "word": " day",
+                    "start": 201.92,
+                    "end": 201.92,
+                    "probability": 0.003840746358036995
+                }
+            ]
+        },
+        {
+            "id": 28,
+            "seek": 23192,
+            "start": 233.18,
+            "end": 234.68,
+            "text": " Thank you.",
+            "tokens": [
+                50364,
+                1044,
+                291,
+                13,
+                50704
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.9961666266123453,
+            "compression_ratio": 0.5555555555555556,
+            "no_speech_prob": 0.8022109866142273,
+            "words": [
+                {
+                    "word": " Thank",
+                    "start": 233.18,
+                    "end": 234.58,
+                    "probability": 0.01104238722473383
+                },
+                {
+                    "word": " you.",
+                    "start": 234.58,
+                    "end": 234.68,
+                    "probability": 0.9286643266677856
+                }
+            ]
+        }
+    ],
+    "language": "en"
+}
