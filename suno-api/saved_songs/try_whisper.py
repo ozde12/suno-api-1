@@ -5,7 +5,7 @@ import json
 model = whisper.load_model("small")
 
 # Transcribe the song with word timestamps
-audio_path = r"C:\Users\ozdep\Documents\suno 1002\suno-api\suno-api\saved_songs\Purrfect_Day.mp3"
+audio_path = r"C:\Users\ozdep\Documents\suno 1002\suno-api\suno-api\saved_songs\cat_Song_english.mp3"
 result = model.transcribe(audio_path, word_timestamps=True)
 
 # Print the raw output to see what's inside

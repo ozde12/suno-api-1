@@ -5,16 +5,6 @@ from twisted.internet.defer import inlineCallbacks
 from autobahn.twisted.component import Component, run
 from alpha_mini_rug import perform_movement  # Import movement function
 
-# Define the WAMP component
-wamp = Component(
-    transports=[{
-        "url": "ws://wamp.robotsindeklas.nl",
-        "serializers": ["msgpack"],
-        "max_retries": 0
-    }],
-    realm="rie.67e141ca540602623a34e03f",
-)
-
 # Define a time scaling factor
 delta_t = 1500
 
@@ -100,16 +90,35 @@ def execute_moves(session):
     for move_name, frames in dance_moves.items():
         print(f"Executing {move_name}...")
         try:
+            for frame in frames:
+                print(f"Sending frame: {frame}")  # Debugging print
             yield perform_movement(session, frames=frames)
             print(f"{move_name} executed successfully!\n")
         except Exception as e:
             print(f"Error executing {move_name}: {e}\n")
+            import traceback
+            traceback.print_exc()  # Print full error details
 
 @inlineCallbacks
 def main(session, details):
     """Main function that runs when the WAMP session joins."""
     print("Connected to WAMP session!")
+    
+    # Play a default behavior
+    yield session.call("rom.optional.behavior.play", name="BlocklyStand")
+
+    # Execute the dance moves
     yield execute_moves(session)
+
+# Define the WAMP component
+wamp = Component(
+    transports=[{
+        "url": "ws://wamp.robotsindeklas.nl",
+        "serializers": ["msgpack"],
+        "max_retries": 0
+    }],
+    realm="rie.67e141ca540602623a34e03f",
+)
 
 # Register main function to execute when WAMP connects
 wamp.on_join(main)

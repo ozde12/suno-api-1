@@ -44,7 +44,7 @@ def extract_word_timestamps(file_path):
     return word_timestamps
 
 # Define song file location
-json_file = r"C:\Users\ozdep\Documents\suno 1002\suno-api\suno-api\word_timestamps.json"
+json_file = r"C:\Users\ozdep\Documents\suno 1002\suno-api\suno-api\saved_songs\cat_Song_english.mp3"
 word_timestamps = extract_word_timestamps(json_file)
 
 # Group words into lyrical & non-lyrical sections
