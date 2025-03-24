@@ -27,7 +27,7 @@ song_duration = librosa.get_duration(y=y, sr=sr)
 # Define a time scaling factor
 delta_t = 1500
 
-# Define dance moves using the correct format
+# Define movement patterns
 dance_moves = {
     "move_1": [
         {"time": 0.5 * delta_t, "data": {
@@ -56,7 +56,7 @@ dance_moves = {
             "body.legs.right.lower.pitch": 0.0,
             "body.legs.left.lower.pitch": 0.0,
             "body.head.yaw": 0.0,
-            "body.torso.yaw": 0.0,
+            "body.torso.yaw": -0.3,
             "body.head.roll": 0.174,
         }},
         {"time": 1 * delta_t, "data": {
@@ -91,7 +91,7 @@ dance_moves = {
     ],
     "move_4": [
         {"time": 0.5 * delta_t, "data": {
-            "body.torso.yaw": 0.7,
+            "body.torso.yaw": -0.5,
             "body.legs.right.lower.pitch": 0.1,
             "body.legs.left.lower.pitch": -0.1,
             "body.arms.right.upper.pitch": -0.3,
@@ -110,7 +110,6 @@ dance_moves = {
         }},
     ]
 }
-
 # WAMP Component
 wamp = Component(
     transports=[{"url": "ws://wamp.robotsindeklas.nl", "serializers": ["msgpack"], "max_retries": 0}],

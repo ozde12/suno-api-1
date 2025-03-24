@@ -7,16 +7,89 @@ from autobahn.twisted.component import Component, run
 from autobahn.twisted.util import sleep
 from alpha_mini_rug import perform_movement  # Import movement function
 
+delta_t = 1500
+
 # Define movement patterns
 dance_moves = {
-    "lyrical_moves": [
-        {"time": 0.5, "data": {"body.arms.right.upper.pitch": -0.5, "body.arms.left.upper.pitch": 0.5}},
-        {"time": 1.0, "data": {"body.arms.right.upper.pitch": 0.0, "body.arms.left.upper.pitch": 0.0}},
-        {"time": 1.5, "data": {"body.arms.right.upper.pitch": 0.5, "body.arms.left.upper.pitch": -0.5}}
+    "move_1": [
+        {"time": 0.5 * delta_t, "data": {
+            "body.head.yaw": 0.5,  
+            "body.arms.right.upper.pitch": -1.0,
+            "body.arms.left.upper.pitch": -1.0,
+            "body.torso.yaw": 0.3,
+            "body.legs.right.lower.pitch": 0.0,
+            "body.legs.left.lower.pitch": 0.0,
+            "body.head.roll": 0.0,
+        }},
+        {"time": 1.0 * delta_t, "data": {
+            "body.head.yaw": 0.0,  
+            "body.arms.right.upper.pitch": 0.0,
+            "body.arms.left.upper.pitch": 0.0,
+            "body.torso.yaw": 0.0,
+            "body.legs.right.lower.pitch": 0.0,
+            "body.legs.left.lower.pitch": 0.0,
+            "body.head.roll": 0.0,
+        }},
     ],
-    "non_lyrical_moves": [
-        {"time": 0.5, "data": {"body.head.yaw": 0.0, "body.torso.yaw": 0.0}},
-        {"time": 1.0, "data": {"body.head.yaw": -0.2, "body.torso.yaw": 0.2}}
+    "move_2": [
+        {"time": 0.5 * delta_t, "data": {
+            "body.arms.right.upper.pitch": -0.5,
+            "body.arms.left.upper.pitch": 0.5,
+            "body.legs.right.lower.pitch": 0.0,
+            "body.legs.left.lower.pitch": 0.0,
+            "body.head.yaw": 0.0,
+            "body.torso.yaw": 0.0,
+            "body.head.roll": 0.174,
+        }},
+        {"time": 1 * delta_t, "data": {
+            "body.arms.right.upper.pitch": 0.0,
+            "body.arms.left.upper.pitch": 0.0,
+            "body.legs.right.lower.pitch": 0.0,
+            "body.legs.left.lower.pitch": 0.0,
+            "body.head.yaw": 0.0,
+            "body.torso.yaw": 0.0,
+            "body.head.roll": -0.174,
+        }},
+    ],
+    "move_3": [
+        {"time": 0.5 * delta_t, "data": {
+            "body.arms.right.upper.pitch": -1.5,
+            "body.arms.left.upper.pitch": 1.5,
+            "body.legs.right.lower.pitch": 0.1,
+            "body.legs.left.lower.pitch": -0.1,
+            "body.torso.yaw": 0.5,
+            "body.head.yaw": 0.0,
+            "body.head.roll": 0.0,
+        }},
+        {"time": 1 * delta_t, "data": {
+            "body.arms.right.upper.pitch": 0.0,
+            "body.arms.left.upper.pitch": 0.0,
+            "body.legs.right.lower.pitch": 0.0,
+            "body.legs.left.lower.pitch": 0.0,
+            "body.torso.yaw": 0.0,
+            "body.head.yaw": 0.0,
+            "body.head.roll": 0.0,
+        }},
+    ],
+    "move_4": [
+        {"time": 0.5 * delta_t, "data": {
+            "body.torso.yaw": 0.7,
+            "body.legs.right.lower.pitch": 0.1,
+            "body.legs.left.lower.pitch": -0.1,
+            "body.arms.right.upper.pitch": -0.3,
+            "body.arms.left.upper.pitch": 0.6,
+            "body.head.yaw": -0.5,
+            "body.head.roll": 0.174,
+        }},
+        {"time": 1 * delta_t, "data": {
+            "body.torso.yaw": 0.0,
+            "body.legs.right.lower.pitch": 0.0,
+            "body.legs.left.lower.pitch": 0.0,
+            "body.arms.right.upper.pitch": 0.0,
+            "body.arms.left.upper.pitch": 0.0,
+            "body.head.yaw": 0.0,
+            "body.head.roll": -0.174
+        }},
     ]
 }
 
@@ -44,34 +117,23 @@ def extract_word_timestamps(file_path):
     return word_timestamps
 
 # Define song file location
-json_file = r"C:\Users\ozdep\Documents\suno 1002\suno-api\suno-api\saved_songs\cat_Song_english.mp3"
+json_file = r"C:\Users\ozdep\Documents\suno 1002\suno-api\suno-api\word_timestamps.json"
 word_timestamps = extract_word_timestamps(json_file)
 
-# Group words into lyrical & non-lyrical sections
-sections = {"lyrical": [], "non_lyrical": []}
-previous_end = 0
+# Directly schedule moves based on start and end times
+def schedule_moves(session):
+    deferreds = []
+    for i, word in enumerate(word_timestamps):
+        move_name = f"move_{(i % len(dance_moves)) + 1}"  # Cycle through moves like move_1, move_2, etc.
 
-for word in word_timestamps:
-    word_start, word_end = word["start"], word["end"]
+        # Schedule movement based on the start time of the word
+        d = defer.Deferred()
+        reactor.callLater(word["start"], d.callback, (move_name, word["start"]))  # Use word start time for movement
+        d.addCallback(lambda data: execute_move(session, *data))
+        deferreds.append(d)
 
-    # If there's a gap, mark it as non-lyrical
-    if word_start > previous_end + 1.0:  # Allow short gaps within lyrics
-        sections["non_lyrical"].append((previous_end, word_start))
+    return defer.DeferredList(deferreds)
 
-    sections["lyrical"].append((word_start, word_end))
-    previous_end = word_end
-
-# If there's an instrumental section at the end
-if previous_end < word_timestamps[-1]["end"]:
-    sections["non_lyrical"].append((previous_end, word_timestamps[-1]["end"]))
-
-# Save to JSON for debugging
-with open("movement_schedule.json", "w") as f:
-    json.dump({"movement_schedule": sections}, f, indent=4)
-
-print("Saved movement schedule to movement_schedule.json.")
-
-# Twisted reactor function to execute moves
 @inlineCallbacks
 def execute_move(session, move_name, expected_time):
     actual_time = time.time()
@@ -83,20 +145,6 @@ def execute_move(session, move_name, expected_time):
     except Exception as e:
         print(f"Error executing {move_name}: {e}")
 
-# Function to schedule moves dynamically
-def schedule_moves(session):
-    deferreds = []
-    for section, times in sections.items():
-        move_name = "lyrical_moves" if section == "lyrical" else "non_lyrical_moves"
-
-        for t in times:
-            d = defer.Deferred()
-            reactor.callLater(t[0], d.callback, (move_name, t[0]))  # Use start time
-            d.addCallback(lambda data: execute_move(session, *data))
-            deferreds.append(d)
-
-    return defer.DeferredList(deferreds)
-
 @inlineCallbacks
 def main(session, details):
     """Main function for executing robot dance moves."""
@@ -106,18 +154,18 @@ def main(session, details):
     yield session.call("rom.optional.behavior.play", name="BlocklyStand")
     yield sleep(1)  # Short delay before moves
 
-    # Schedule moves dynamically
+    # Schedule moves dynamically based on word timestamps
     yield schedule_moves(session)
 
     # Wait for the song to finish
-    yield sleep(max(t[-1] for t in sections["lyrical"] + sections["non_lyrical"]))
+    yield sleep(max(word["end"] for word in word_timestamps))  # Wait until the last word's end time
     yield session.call("rom.actuator.audio.stop")
     session.leave()
 
 # WAMP Component for controlling the robot
 wamp = Component(
     transports=[{"url": "ws://wamp.robotsindeklas.nl", "serializers": ["msgpack"], "max_retries": 0}],
-    realm="rie.67dbce6b540602623a34c4a8",
+    realm="rie.67e141ca540602623a34e03f",
 )
 wamp.on_join(main)
 
