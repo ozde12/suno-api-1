@@ -7,9 +7,24 @@ from autobahn.twisted.component import Component, run
 from autobahn.twisted.util import sleep
 from alpha_mini_rug import perform_movement  # Import movement function
 import logging
+import os
 
-# Load the audio file and detect beats
-audio_path = r"C:\Users\ozdep\Documents\suno 1002\suno-api\suno-api\saved_songs\UPLOADED SONGS\song_in_dutch.mp3"
+output_filename = "song_in_dutch.mp3"
+
+base_dir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+
+audio_path = os.path.join(
+    base_dir,
+    "saved_songs",
+    "UPLOADED SONGS",
+    output_filename
+)
+
+if not os.path.exists(audio_path):
+    raise FileNotFoundError(f"Audio file not found at: {audio_path}")
+
+print(f"Using audio file: {audio_path}")
+
 y, sr = librosa.load(audio_path)
 tempo, beat_frames = librosa.beat.beat_track(y=y, sr=sr)
 beat_times = librosa.frames_to_time(beat_frames, sr=sr)
@@ -226,7 +241,7 @@ def schedule_moves(session, beat_times):
     return defer.DeferredList(deferreds)
 
 @inlineCallbacks
-def main(session, details):
+def main(session, audio_path):
     """Main execution function when session is connected."""
     print("Session connected!")
 
@@ -247,7 +262,3 @@ def main(session, details):
     yield session.call("rom.actuator.audio.stop")
     session.leave()
 
-wamp.on_join(main)
-
-if __name__ == "__main__":
-    run([wamp])
