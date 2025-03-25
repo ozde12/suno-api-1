@@ -9,7 +9,7 @@ from alpha_mini_rug import perform_movement  # Import movement function
 import logging
 
 # Load the audio file and detect beats
-audio_path = r"C:\Users\ozdep\Documents\suno 1002\suno-api\suno-api\saved_songs\song_in_dutch.mp3"
+audio_path = r"C:\Users\ozdep\Documents\suno 1002\suno-api\suno-api\saved_songs\UPLOADED SONGS\song_in_dutch.mp3"
 y, sr = librosa.load(audio_path)
 tempo, beat_frames = librosa.beat.beat_track(y=y, sr=sr)
 beat_times = librosa.frames_to_time(beat_frames, sr=sr)
