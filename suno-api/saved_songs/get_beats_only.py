@@ -9,7 +9,7 @@ from alpha_mini_rug import perform_movement  # Import movement function
 import logging
 
 # Load the audio file and detect beats
-audio_path = r"C:\Users\ozdep\Documents\suno 1002\suno-api\suno-api\saved_songs\cat_Song_english.mp3"
+audio_path = r"C:\Users\ozdep\Documents\suno 1002\suno-api\suno-api\saved_songs\song_in_dutch.mp3"
 y, sr = librosa.load(audio_path)
 tempo, beat_frames = librosa.beat.beat_track(y=y, sr=sr)
 beat_times = librosa.frames_to_time(beat_frames, sr=sr)
@@ -113,7 +113,7 @@ dance_moves = {
 # WAMP Component
 wamp = Component(
     transports=[{"url": "ws://wamp.robotsindeklas.nl", "serializers": ["msgpack"], "max_retries": 0}],
-    realm="rie.67e141ca540602623a34e03f",
+    realm="rie.67e28066540602623a34e87d",
 )
 
 music_start_time = 0.0  # Track when music starts
@@ -123,7 +123,7 @@ def play_music(session):
     """Plays music using the WAMP streaming API."""
     global music_start_time
     try:
-        result = yield session.call("rom.actuator.audio.stream", url="https://audio.jukehost.co.uk/4tS0VmA72jU8YGPAYvmOQVBnih7bpEnB", sync=False)
+        result = yield session.call("rom.actuator.audio.stream", url="https://audio.jukehost.co.uk/CB682YXgzhWzFbN6WMxQUAqmiRCuUsiY ", sync=False)
         music_start_time = time.time()
         print(f"Music started successfully: {result}")
     except Exception as e:

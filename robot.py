@@ -235,53 +235,5 @@ if song_data:
     get_aligned_lyrics(song_id)
     print("✅ DONE!")
 
-# Example usage if you would like to pass on predefined lyrics
-custom_lyrics = """ 
-[Verse 1]
-I see a cat, soft and small,
-It jumps so high, but never falls.
-Its whiskers, long and thin,
-Meow, meow, meow says the cat!
-
-[Chorus]
-Meow, meow, what do you say?
-Meow, meow, let's play today!
-You're my pet, I love you so,
-Purr, purr, don't ever go!
-
-[Verse 2]
-My little cat sleeps all day,
-Wakes up at night, ready to play.
-Its little whiskers move around,
-Meow, meow, meow says the cat!
-
-[Chorus]
-Meow, meow, what do you say?
-Meow, meow, let's play today!
-You're my pet, I love you so,
-Purr, purr, don't ever go!
-
-[Bridge]
-Cat, whiskers, pet, and meow,
-Say them loud, say them now!
-Cat, whiskers, pet, and meow,
-One more time, nice and proud!
-
-[Chorus]
-Meow, meow, what do you say?
-Meow, meow, let's play today!
-You're my pet, I love you so,
-Purr, purr, don’t ever go!"""
-
-
-
-#song_data = generate_song(custom_lyrics)
-
-#song_data = custom_generate(prompt=custom_lyrics)
-
-"""if song_data:
-    song_id = song_data[0]["id"]
-    get_aligned_lyrics(song_id)
-    print("✅ DONE!")"""
 
 
