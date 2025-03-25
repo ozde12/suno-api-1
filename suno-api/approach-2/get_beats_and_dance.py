@@ -38,6 +38,8 @@ dance_moves = {
             "body.legs.right.lower.pitch": 0.0,
             "body.legs.left.lower.pitch": 0.0,
             "body.head.roll": 0.0,
+            "body.legs.left.upper.pitch":0.0,
+            "body.legs.right.upper.pitch":0.0
         }},
         {"time": 1.0 * delta_t, "data": {
             "body.head.yaw": 0.0,  
@@ -47,6 +49,8 @@ dance_moves = {
             "body.legs.right.lower.pitch": 0.0,
             "body.legs.left.lower.pitch": 0.0,
             "body.head.roll": 0.0,
+            "body.legs.left.upper.pitch":0.0,
+            "body.legs.right.upper.pitch":0.0
         }},
     ],
     "move_2": [
@@ -58,6 +62,8 @@ dance_moves = {
             "body.head.yaw": 0.0,
             "body.torso.yaw": -0.3,
             "body.head.roll": 0.174,
+            "body.legs.left.upper.pitch":0.0,
+            "body.legs.right.upper.pitch":0.0
         }},
         {"time": 1 * delta_t, "data": {
             "body.arms.right.upper.pitch": 0.0,
@@ -67,6 +73,8 @@ dance_moves = {
             "body.head.yaw": 0.0,
             "body.torso.yaw": 0.0,
             "body.head.roll": -0.174,
+            "body.legs.left.upper.pitch":0.0,
+            "body.legs.right.upper.pitch":0.0
         }},
     ],
     "move_3": [
@@ -78,6 +86,8 @@ dance_moves = {
             "body.torso.yaw": 0.5,
             "body.head.yaw": 0.0,
             "body.head.roll": 0.0,
+            "body.legs.left.upper.pitch":0.0,
+            "body.legs.right.upper.pitch":0.0
         }},
         {"time": 1 * delta_t, "data": {
             "body.arms.right.upper.pitch": 0.0,
@@ -87,10 +97,12 @@ dance_moves = {
             "body.torso.yaw": 0.0,
             "body.head.yaw": 0.0,
             "body.head.roll": 0.0,
+            "body.legs.left.upper.pitch":0.0,
+            "body.legs.right.upper.pitch":0.0
         }},
     ],
     "move_4": [
-        {"time": 0.5 * delta_t, "data": {
+        {"time": 0.5* delta_t, "data": {
             "body.torso.yaw": -0.5,
             "body.legs.right.lower.pitch": 0.1,
             "body.legs.left.lower.pitch": -0.1,
@@ -98,6 +110,8 @@ dance_moves = {
             "body.arms.left.upper.pitch": 0.6,
             "body.head.yaw": -0.5,
             "body.head.roll": 0.174,
+            "body.legs.left.upper.pitch":0.0,
+            "body.legs.right.upper.pitch":0.0
         }},
         {"time": 1 * delta_t, "data": {
             "body.torso.yaw": 0.0,
@@ -106,9 +120,56 @@ dance_moves = {
             "body.arms.right.upper.pitch": 0.0,
             "body.arms.left.upper.pitch": 0.0,
             "body.head.yaw": 0.0,
-            "body.head.roll": -0.174
+            "body.head.roll": -0.174,
+            "body.legs.left.upper.pitch":0.0,
+            "body.legs.right.upper.pitch":0.0
         }},
+    ],
+    "move_5": [
+    {
+        "time": 1.0 * delta_t,
+        "data": {
+            "body.torso.yaw": -0.15,                         # Lean torso slightly for balance
+            "body.legs.right.upper.pitch": 1.2,              # Raise right leg
+            "body.legs.right.lower.pitch": 0.1,              # Slight bend
+            "body.legs.left.upper.pitch": 0.0,
+            "body.legs.left.lower.pitch": 0.25,              # Supporting leg slightly bent
+            "body.arms.right.upper.pitch": -0.3,             # Counter arm
+            "body.arms.left.upper.pitch": 0.4,               # Balance arm
+            "body.head.yaw": 0.0,
+            "body.head.roll": 0.1                            # Subtle head tilt
+        }
+    },
+    {
+        "time": 3.0 * delta_t,
+        "data": {
+            "body.torso.yaw": 0.15,                          # Shift torso the other way
+            "body.legs.left.upper.pitch": 1.2,               # Raise left leg
+            "body.legs.left.lower.pitch": 0.1,
+            "body.legs.right.upper.pitch": 0.0,
+            "body.legs.right.lower.pitch": 0.25,
+            "body.arms.left.upper.pitch": -0.3,
+            "body.arms.right.upper.pitch": 0.4,
+            "body.head.yaw": 0.0,
+            "body.head.roll": -0.1
+        }
+    },
+    {
+        "time": 5.5 * delta_t,
+        "data": {
+            "body.torso.yaw": 0.0,
+            "body.legs.right.upper.pitch": 0.0,
+            "body.legs.right.lower.pitch": 0.0,
+            "body.legs.left.upper.pitch": 0.0,
+            "body.legs.left.lower.pitch": 0.0,
+            "body.arms.right.upper.pitch": 0.0,
+            "body.arms.left.upper.pitch": 0.0,
+            "body.head.yaw": 0.0,
+            "body.head.roll": 0.0
+        }
+    }
     ]
+
 }
 # WAMP Component
 wamp = Component(
