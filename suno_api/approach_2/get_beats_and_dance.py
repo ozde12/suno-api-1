@@ -16,7 +16,7 @@ base_dir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 audio_path = os.path.join(
     base_dir,
     "saved_songs",
-    "UPLOADED SONGS",
+    "UPLOADED_SONGS",
     output_filename
 )
 
