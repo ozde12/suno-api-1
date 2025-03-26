@@ -3,7 +3,6 @@ import json
 import time
 from twisted.internet import reactor, defer
 from twisted.internet.defer import inlineCallbacks
-from autobahn.twisted.component import Component, run
 from autobahn.twisted.util import sleep
 from alpha_mini_rug import perform_movement  # Import movement function
 import logging
@@ -109,61 +108,23 @@ dance_moves = {
             "body.legs.left.upper.pitch":0.0,
             "body.legs.right.upper.pitch":0.0
         }},
-    ],
-    "move_5": [
-    {
-        "time": 1.0 * delta_t,
-        "data": {
-            "body.torso.yaw": -0.15,                         # Lean torso slightly for balance
-            "body.legs.right.upper.pitch": 1.2,              # Raise right leg
-            "body.legs.right.lower.pitch": 0.1,              # Slight bend
-            "body.legs.left.upper.pitch": 0.0,
-            "body.legs.left.lower.pitch": 0.25,              # Supporting leg slightly bent
-            "body.arms.right.upper.pitch": -0.3,             # Counter arm
-            "body.arms.left.upper.pitch": 0.4,               # Balance arm
-            "body.head.yaw": 0.0,
-            "body.head.roll": 0.1                            # Subtle head tilt
-        }
-    },
-    {
-        "time": 3.0 * delta_t,
-        "data": {
-            "body.torso.yaw": 0.15,                          # Shift torso the other way
-            "body.legs.left.upper.pitch": 1.2,               # Raise left leg
-            "body.legs.left.lower.pitch": 0.1,
-            "body.legs.right.upper.pitch": 0.0,
-            "body.legs.right.lower.pitch": 0.25,
-            "body.arms.left.upper.pitch": -0.3,
-            "body.arms.right.upper.pitch": 0.4,
-            "body.head.yaw": 0.0,
-            "body.head.roll": -0.1
-        }
-    },
-    {
-        "time": 5.5 * delta_t,
-        "data": {
-            "body.torso.yaw": 0.0,
-            "body.legs.right.upper.pitch": 0.0,
-            "body.legs.right.lower.pitch": 0.0,
-            "body.legs.left.upper.pitch": 0.0,
-            "body.legs.left.lower.pitch": 0.0,
-            "body.arms.right.upper.pitch": 0.0,
-            "body.arms.left.upper.pitch": 0.0,
-            "body.head.yaw": 0.0,
-            "body.head.roll": 0.0
-        }
-    }
     ]
 }
 
 music_start_time = 0.0  # Track when music starts
 
 @inlineCallbacks
-def play_music(session):
+def play_music(session, language: str):
     """Plays music using the WAMP streaming API."""
     global music_start_time
+
+    if language == "nl":
+        url="https://audio.jukehost.co.uk/CB682YXgzhWzFbN6WMxQUAqmiRCuUsiY"
+    else:
+        url="https://audio.jukehost.co.uk/4tS0VmA72jU8YGPAYvmOQVBnih7bpEnB"
+
     try:
-        result = yield session.call("rom.actuator.audio.stream", url="https://audio.jukehost.co.uk/CB682YXgzhWzFbN6WMxQUAqmiRCuUsiY ", sync=False)
+        result = yield session.call("rom.actuator.audio.stream", url=url, sync=False)
         music_start_time = time.time()
         print(f"Music started successfully: {result}")
     except Exception as e:
@@ -205,15 +166,20 @@ def schedule_moves(session, beat_times, song_duration):
     return defer.DeferredList(deferreds)
 
 @inlineCallbacks
-def main(session, audio_path):
+def main(session, audio_path, language: str):
     """Main execution function when session is connected."""
     print("Getting beats and dance...")
 
     yield session.call("rom.optional.behavior.play", name="BlocklyStand")
 
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    json_path = os.path.join(script_dir, "..", "..", "beat_timestamps.json")
+
+    print("opening json path")
     # Load the beat timestamps
-    with open("beat_timestamps.json", "r") as f:
+    with open(json_path, "r") as f:
         beat_data = json.load(f)
+    print("opened beat timestamps")
 
     beat_times = beat_data["beats"]
 
@@ -222,14 +188,18 @@ def main(session, audio_path):
 
     # Load audio and calculate tempo
     y, sr = librosa.load(audio_path)
+    print("load audio")
     tempo, beat_frames = librosa.beat.beat_track(y=y, sr=sr)
+    print("got tempo")
     beat_times = librosa.frames_to_time(beat_frames, sr=sr)
+    print("got beat times")
 
     # Save beat timestamps
     with open("beat_timestamps.json", "w") as f:
         json.dump({"beats": beat_times.tolist()}, f, indent=4)
+    print("opened beat timestamps")
 
-    print(f"Detected Tempo: {tempo:.2f} BPM")
+    print(f"Detected Tempo: {tempo} BPM")
     print(f"Saved {len(beat_times)} beats to beat_timestamps.json")
 
     # Get song duration (moved this earlier to ensure it's defined)
@@ -237,9 +207,11 @@ def main(session, audio_path):
     print(f"Song Duration: {song_duration:.2f} seconds")
 
     # Run the music and schedule the moves
-    deferreds = [play_music(session), schedule_moves(session, beat_times, song_duration)]
+    deferreds = [play_music(session, language), schedule_moves(session, beat_times, song_duration)]
+    print("deferred")
     yield defer.DeferredList(deferreds)
 
     yield sleep(song_duration)
     yield session.call("rom.actuator.audio.stop")
     yield session.call("rom.optional.behavior.play", name="BlocklyStand")
+    print("done with song main")
