@@ -3,6 +3,9 @@ import librosa
 import numpy as np
 from collections import Counter
 
+"""This script was used to figure out when beats happen, checks which part of the song (like verse or chorus) each beat belongs to (using the aligned lyrics).
+This script was mainly used to compare the results of the beat detection with the aligned lyrics."""
+
 ALIGNED_LYRICS_PATH = r"C:\Users\ozdep\Documents\suno 1002\suno-api\suno-api\saved_songs\d07e0180-cd91-4467-99d1-5a579253a053_aligned_lyrics.json"
 
 def load_lyrics(file_path):

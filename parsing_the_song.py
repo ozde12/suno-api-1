@@ -6,6 +6,8 @@ from autobahn.twisted.component import Component, run
 from autobahn.twisted.util import sleep
 from alpha_mini_rug import perform_movement  # Import movement function
 
+""" This script is used to play a song and execute dance moves in sync with the music for the initial approach of the LLM generated music which uses the information recieved from the API endpoints."""
+
 # Define a time scaling factor
 delta_t = 1500 
 
