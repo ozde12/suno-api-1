@@ -15,29 +15,29 @@ def check_server():
     try:
         response = requests.get(f"{BASE_URL}/docs")
         if response.status_code == 200:
-            print("✅ Server is running.")
+            print("Server is running.")
             return True
     except requests.exceptions.RequestException:
         pass
-    print("❌ Server is not running.")
+    print("Server is not running.")
     return False
 
 
 def start_server():
     """Start the Next.js server if it's not running."""
-    print("🚀 Starting Next.js server...")
+    print(" Starting Next.js server...")
     subprocess.Popen(["cmd", "/c", "npm run dev"], cwd=os.getcwd(), shell=True)
     
     max_wait = 30
     waited = 0
     while waited < max_wait:
         if check_server():
-            print("⏳ Waiting 5 more seconds for endpoints to load...")
+            print(" Waiting 5 more seconds for endpoints to load...")
             time.sleep(5)
             return
         time.sleep(2)
         waited += 2
-    print("❌ Server failed to start within the expected time.")
+    print(" Server failed to start within the expected time.")
 
 
 if not check_server():
@@ -62,7 +62,7 @@ def save_lyrics(song_title, lyrics):
 
     with open(filename, "w", encoding="utf-8") as file:
         file.write(lyrics)
-    print(f"📜 Lyrics saved to: {filename}")
+    print(f" Lyrics saved to: {filename}")
     return filename
 
 
@@ -73,14 +73,14 @@ def save_metadata(song_title, song_id, audio_url):
 
     with open(filename, "w", encoding="utf-8") as file:
         file.write(f"Title: {song_title}\nID: {song_id}\nAudio URL: {audio_url}\n")
-    print(f"📄 Metadata saved to: {filename}")
+    print(f" Metadata saved to: {filename}")
     return filename
 
 
 def download_audio(song_title, audio_url):
     """Download audio and save it."""
     if not audio_url or audio_url == "None":
-        print("❌ No valid audio URL found. Skipping download.")
+        print(" No valid audio URL found. Skipping download.")
         return None
 
     ensure_directory_exists(SAVE_DIR)
@@ -92,13 +92,13 @@ def download_audio(song_title, audio_url):
             with open(filename, "wb") as file:
                 for chunk in response.iter_content(1024):
                     file.write(chunk)
-            print(f"🎶 Audio saved to: {filename}")
+            print(f"Audio saved to: {filename}")
             return filename
         else:
-            print(f"❌ Failed to download audio: {response.status_code}")
+            print(f"Failed to download audio: {response.status_code}")
             return None
     except Exception as e:
-        print(f"❌ Error downloading audio: {e}")
+        print(f"Error downloading audio: {e}")
         return None
 
 def custom_generate(prompt, tags="playful, elementary school", negative_tags="female vocals", title=None, make_instrumental=False, model="chirp-v3-5|chirp-v3-0", wait_audio=False):
@@ -119,7 +119,7 @@ def custom_generate(prompt, tags="playful, elementary school", negative_tags="fe
         response_data = response.json() if response.status_code == 200 else None
 
         if not response_data or not isinstance(response_data, list):
-            print("❌ Invalid response format from API.")
+            print("Invalid response format from API.")
             return None
 
         songs = []
@@ -133,7 +133,7 @@ def custom_generate(prompt, tags="playful, elementary school", negative_tags="fe
                     audio_url = inner_data.get("audio_url")
 
                     if song_id and title:
-                        print(f"✅ Song generated: {song_id}")
+                        print(f"Song generated: {song_id}")
 
                         # Save lyrics if available
                         lyrics_file = save_lyrics(title, lyrics) if lyrics else None
@@ -146,15 +146,15 @@ def custom_generate(prompt, tags="playful, elementary school", negative_tags="fe
                             "metadata_file": metadata_file, "audio_file": audio_file
                         })
                     else:
-                        print(f"⚠️ Missing essential song details: {inner_data}")
+                        print(f"Missing essential song details: {inner_data}")
 
         return songs if songs else None
 
     except requests.exceptions.RequestException as e:
-        print(f"❌ API request failed: {e}")
+        print(f"API request failed: {e}")
         return None
     except Exception as e:
-        print(f"❌ Unexpected error: {e}")
+        print(f"Unexpected error: {e}")
         return None
 
 
@@ -177,7 +177,7 @@ def generate_song(prompt, make_instrumental=False, model="chirp-v3-5|chirp-v3-0"
                     audio_url = item.get("audio_url")
 
                     if song_id and title and lyrics and audio_url:
-                        print(f"✅ Song generated: {song_id}")
+                        print(f"Song generated: {song_id}")
 
                         lyrics_file = save_lyrics(title, lyrics)
                         metadata_file = save_metadata(title, song_id, audio_url)
@@ -189,10 +189,10 @@ def generate_song(prompt, make_instrumental=False, model="chirp-v3-5|chirp-v3-0"
                         })
             return songs if songs else None
         else:
-            print("❌ Error generating song.")
+            print("Error generating song.")
             return None
     except Exception as e:
-        print(f"❌ Exception: {e}")
+        print(f"Exception: {e}")
         return None
 
 
@@ -204,10 +204,10 @@ def save_aligned_lyrics(song_id, aligned_lyrics_data):
     try:
         with open(filename, "w", encoding="utf-8") as file:
             json.dump(aligned_lyrics_data, file, indent=4, ensure_ascii=False)
-        print(f"📄 Aligned lyrics saved to: {filename}")
+        print(f"Aligned lyrics saved to: {filename}")
         return filename
     except Exception as e:
-        print(f"❌ Error saving aligned lyrics: {e}")
+        print(f"Error saving aligned lyrics: {e}")
         return None
 
 
@@ -220,11 +220,11 @@ def get_aligned_lyrics(song_id):
         response = requests.get(url, params=params)
         if response.status_code == 200:
             aligned_lyrics_data = response.json()
-            print(f"✅ Aligned lyrics retrieved for {song_id}")
+            print(f"Aligned lyrics retrieved for {song_id}")
             return save_aligned_lyrics(song_id, aligned_lyrics_data)
-        print("❌ Aligned lyrics not found.")
+        print("Aligned lyrics not found.")
     except Exception as e:
-        print(f"❌ Error fetching aligned lyrics: {e}")
+        print(f"Error fetching aligned lyrics: {e}")
 
 
 # === 🎶 Usage Example if you do not have predefined lyrics===
@@ -233,7 +233,7 @@ song_data = generate_song(prompt_text)
 if song_data:
     song_id = song_data[0]["id"]
     get_aligned_lyrics(song_id)
-    print("✅ DONE!")
+    print("DONE!")
 
 
 
