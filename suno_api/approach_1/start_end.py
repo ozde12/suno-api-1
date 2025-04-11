@@ -7,6 +7,14 @@ from autobahn.twisted.component import Component, run
 from autobahn.twisted.util import sleep
 from alpha_mini_rug import perform_movement  # Import movement function
 
+"""
+Uses word-aligned timestamps (e.g., from Whisper) to drive precise robot movement synchronization.
+
+Enables real-time choreography where Alpha Mini performs dance sequences timed to each spoken word.
+
+Provides an alternative to beat- or section-based synchronization.
+"""
+
 delta_t = 1500
 
 # Define movement patterns

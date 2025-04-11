@@ -1,11 +1,14 @@
 import whisper
 import json
+import os
+
+"""This script is used to transcribe a song using the Whisper model and extract word timestamps and compare the resulting timestamps with the timestamps obttained from the api-endpoint, get_aligned_lyrics"""
 
 # Load Whisper model
-model = whisper.load_model("small")
+model = whisper.load_model("medium")
 
 # Transcribe the song with word timestamps
-audio_path = r"C:\Users\ozdep\Documents\suno 1002\suno-api\suno-api\saved_songs\cat_Song_english.mp3"
+audio_path = r"C:\Users\ozdep\Documents\social robotics final project\Social-Robotics-Practical\Assignment_3\src\suno_music\suno_repository\suno_api\saved_songs\API END POINT SONGS\Purrfect_Day.mp3"
 result = model.transcribe(audio_path, word_timestamps=True)
 
 # Print the raw output to see what's inside
@@ -22,11 +25,19 @@ for segment in result.get("segments", []):
                 "end": word["end"]
             })
 
-# Save to JSON
-#with open("word_timestamps.json", "w") as f:
-    #json.dump(word_timestamps, f, indent=4)
 
-with open(r"C:\Users\ozdep\Documents\suno 1002\suno-api\suno-api\word_timestamps.json", "w") as f:
+
+# Target directory to save the JSON file
+save_dir = r"C:\Users\ozdep\Documents\social robotics final project\Social-Robotics-Practical\Assignment_3\src\suno_music\suno_repository\suno_api\saved_songs\API END POINT SONGS"
+
+# Make sure the directory exists
+os.makedirs(save_dir, exist_ok=True)
+
+# Full file path
+output_path = os.path.join(save_dir, "word_timestamps.json")
+
+# Save the word-level transcription result
+with open(output_path, "w", encoding="utf-8") as f:
     json.dump(result, f, indent=4)
 
-print("Saved word timestamps to word_timestamps.json.")
+print(f"Saved word timestamps to {output_path}")

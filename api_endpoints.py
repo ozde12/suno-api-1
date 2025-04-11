@@ -227,7 +227,7 @@ def get_aligned_lyrics(song_id):
         print(f"Error fetching aligned lyrics: {e}")
 
 
-# === 🎶 Usage Example if you do not have predefined lyrics===
+# ===  Usage Example if you do not have predefined lyrics===
 prompt_text = "A playful song about cats for Dutch kids aged 7-8 learning English."
 song_data = generate_song(prompt_text)
 if song_data:
