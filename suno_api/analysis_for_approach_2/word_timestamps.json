@@ -1,0 +1,381 @@
+{
+    "text": " I see a cat, soft and small, Whiskers long, tails so tall, pause go tap, pause go run, Play in jumping, having fun. Cat, cat, pet the cat, Soft and happy just like that, purr purr, what a treat, the little cat is oh so sweet.",
+    "segments": [
+        {
+            "id": 0,
+            "seek": 0,
+            "start": 5.259999999999999,
+            "end": 17.74,
+            "text": " I see a cat, soft and small, Whiskers long, tails so tall, pause go tap, pause go run, Play in jumping, having fun.",
+            "tokens": [
+                50364,
+                286,
+                536,
+                257,
+                3857,
+                11,
+                2787,
+                293,
+                1359,
+                11,
+                506,
+                7797,
+                433,
+                938,
+                11,
+                28537,
+                370,
+                6764,
+                11,
+                10465,
+                352,
+                5119,
+                11,
+                10465,
+                352,
+                1190,
+                11,
+                5506,
+                294,
+                11233,
+                11,
+                1419,
+                1019,
+                13,
+                51264
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.32119663341625315,
+            "compression_ratio": 1.2105263157894737,
+            "no_speech_prob": 0.800899088382721,
+            "words": [
+                {
+                    "word": " I",
+                    "start": 5.259999999999999,
+                    "end": 6.06,
+                    "probability": 0.21533039212226868
+                },
+                {
+                    "word": " see",
+                    "start": 6.06,
+                    "end": 6.46,
+                    "probability": 0.8573129177093506
+                },
+                {
+                    "word": " a",
+                    "start": 6.46,
+                    "end": 6.96,
+                    "probability": 0.9466029405593872
+                },
+                {
+                    "word": " cat,",
+                    "start": 6.96,
+                    "end": 7.3,
+                    "probability": 0.9690561294555664
+                },
+                {
+                    "word": " soft",
+                    "start": 7.54,
+                    "end": 7.96,
+                    "probability": 0.8952605128288269
+                },
+                {
+                    "word": " and",
+                    "start": 7.96,
+                    "end": 8.3,
+                    "probability": 0.9816665649414062
+                },
+                {
+                    "word": " small,",
+                    "start": 8.3,
+                    "end": 8.82,
+                    "probability": 0.9955119490623474
+                },
+                {
+                    "word": " Whiskers",
+                    "start": 9.32,
+                    "end": 9.86,
+                    "probability": 0.8443888425827026
+                },
+                {
+                    "word": " long,",
+                    "start": 9.86,
+                    "end": 10.32,
+                    "probability": 0.9854972958564758
+                },
+                {
+                    "word": " tails",
+                    "start": 10.76,
+                    "end": 11.02,
+                    "probability": 0.5771899223327637
+                },
+                {
+                    "word": " so",
+                    "start": 11.02,
+                    "end": 11.34,
+                    "probability": 0.9975878000259399
+                },
+                {
+                    "word": " tall,",
+                    "start": 11.34,
+                    "end": 11.84,
+                    "probability": 0.9974229335784912
+                },
+                {
+                    "word": " pause",
+                    "start": 12.28,
+                    "end": 12.5,
+                    "probability": 0.07130695879459381
+                },
+                {
+                    "word": " go",
+                    "start": 12.5,
+                    "end": 12.84,
+                    "probability": 0.6388798356056213
+                },
+                {
+                    "word": " tap,",
+                    "start": 12.84,
+                    "end": 13.2,
+                    "probability": 0.9731950163841248
+                },
+                {
+                    "word": " pause",
+                    "start": 13.7,
+                    "end": 14.04,
+                    "probability": 0.9365784525871277
+                },
+                {
+                    "word": " go",
+                    "start": 14.04,
+                    "end": 14.4,
+                    "probability": 0.9874916076660156
+                },
+                {
+                    "word": " run,",
+                    "start": 14.4,
+                    "end": 14.8,
+                    "probability": 0.9852332472801208
+                },
+                {
+                    "word": " Play",
+                    "start": 15.16,
+                    "end": 15.5,
+                    "probability": 0.8202335238456726
+                },
+                {
+                    "word": " in",
+                    "start": 15.5,
+                    "end": 15.9,
+                    "probability": 0.8498516082763672
+                },
+                {
+                    "word": " jumping,",
+                    "start": 15.9,
+                    "end": 16.4,
+                    "probability": 0.9634115099906921
+                },
+                {
+                    "word": " having",
+                    "start": 16.82,
+                    "end": 17.18,
+                    "probability": 0.9911308288574219
+                },
+                {
+                    "word": " fun.",
+                    "start": 17.18,
+                    "end": 17.74,
+                    "probability": 0.9991463422775269
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "seek": 1774,
+            "start": 17.74,
+            "end": 29.72,
+            "text": " Cat, cat, pet the cat, Soft and happy just like that, purr purr, what a treat, the little cat is oh so sweet.",
+            "tokens": [
+                50364,
+                9565,
+                11,
+                3857,
+                11,
+                3817,
+                264,
+                3857,
+                11,
+                16985,
+                293,
+                2055,
+                445,
+                411,
+                300,
+                11,
+                1864,
+                81,
+                1864,
+                81,
+                11,
+                437,
+                257,
+                2387,
+                11,
+                264,
+                707,
+                3857,
+                307,
+                1954,
+                370,
+                3844,
+                13,
+                50964
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.19967491967337472,
+            "compression_ratio": 1.2386363636363635,
+            "no_speech_prob": 0.7640717029571533,
+            "words": [
+                {
+                    "word": " Cat,",
+                    "start": 17.74,
+                    "end": 18.58,
+                    "probability": 0.9167867302894592
+                },
+                {
+                    "word": " cat,",
+                    "start": 18.9,
+                    "end": 19.26,
+                    "probability": 0.8950945734977722
+                },
+                {
+                    "word": " pet",
+                    "start": 19.74,
+                    "end": 20.04,
+                    "probability": 0.9846194386482239
+                },
+                {
+                    "word": " the",
+                    "start": 20.04,
+                    "end": 20.48,
+                    "probability": 0.887809157371521
+                },
+                {
+                    "word": " cat,",
+                    "start": 20.48,
+                    "end": 20.84,
+                    "probability": 0.9792414307594299
+                },
+                {
+                    "word": " Soft",
+                    "start": 20.92,
+                    "end": 21.48,
+                    "probability": 0.5343692898750305
+                },
+                {
+                    "word": " and",
+                    "start": 21.48,
+                    "end": 21.92,
+                    "probability": 0.9867258071899414
+                },
+                {
+                    "word": " happy",
+                    "start": 21.92,
+                    "end": 22.42,
+                    "probability": 0.989386796951294
+                },
+                {
+                    "word": " just",
+                    "start": 22.42,
+                    "end": 22.96,
+                    "probability": 0.3889569044113159
+                },
+                {
+                    "word": " like",
+                    "start": 22.96,
+                    "end": 23.36,
+                    "probability": 0.9989840388298035
+                },
+                {
+                    "word": " that,",
+                    "start": 23.36,
+                    "end": 23.82,
+                    "probability": 0.9972020387649536
+                },
+                {
+                    "word": " purr",
+                    "start": 24.26,
+                    "end": 24.88,
+                    "probability": 0.63265061378479
+                },
+                {
+                    "word": " purr,",
+                    "start": 24.88,
+                    "end": 25.74,
+                    "probability": 0.8678916692733765
+                },
+                {
+                    "word": " what",
+                    "start": 25.84,
+                    "end": 25.98,
+                    "probability": 0.5197975039482117
+                },
+                {
+                    "word": " a",
+                    "start": 25.98,
+                    "end": 26.32,
+                    "probability": 0.9972636699676514
+                },
+                {
+                    "word": " treat,",
+                    "start": 26.32,
+                    "end": 26.7,
+                    "probability": 0.9980244636535645
+                },
+                {
+                    "word": " the",
+                    "start": 27.12,
+                    "end": 27.24,
+                    "probability": 0.19327881932258606
+                },
+                {
+                    "word": " little",
+                    "start": 27.24,
+                    "end": 27.72,
+                    "probability": 0.9880061745643616
+                },
+                {
+                    "word": " cat",
+                    "start": 27.72,
+                    "end": 28.24,
+                    "probability": 0.9759951233863831
+                },
+                {
+                    "word": " is",
+                    "start": 28.24,
+                    "end": 28.64,
+                    "probability": 0.950792133808136
+                },
+                {
+                    "word": " oh",
+                    "start": 28.64,
+                    "end": 28.98,
+                    "probability": 0.9487824440002441
+                },
+                {
+                    "word": " so",
+                    "start": 28.98,
+                    "end": 29.28,
+                    "probability": 0.8506540060043335
+                },
+                {
+                    "word": " sweet.",
+                    "start": 29.28,
+                    "end": 29.72,
+                    "probability": 0.9969411492347717
+                }
+            ]
+        }
+    ],
+    "language": "en"
+}
